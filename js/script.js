@@ -22,6 +22,9 @@ filterBtns.forEach((btn)=>{
         x.className += " active";
         let y = document.getElementById('menu');
         y.className += " hide__menu";
+        let z= document.getElementById('home');
+        z.classList.remove("responsive");
+    
         const Category=e.currentTarget.dataset.id;
         const menuCategory = menu.filter((menuItem)=>{
             if(menuItem.Category==Category){
