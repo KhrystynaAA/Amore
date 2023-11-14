@@ -84,8 +84,7 @@ html {
   #btn__menu{
     display: flex;
     position: absolute;
-    width:50vw;
-    height: 50vh;
+    width:50rem;
     left: 75%;
   }
 
