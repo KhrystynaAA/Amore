@@ -30,8 +30,7 @@ html {
   }
  
   .logo {
-    width: 20%;
-    align-self: center;
+    width: 20vw;
   }
   #btn__menu{
     display: none;
