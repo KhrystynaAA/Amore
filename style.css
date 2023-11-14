@@ -93,7 +93,7 @@ html {
     justify-content: space-between;
     position: fixed;
     width: 100vw;
-    padding: 34px 120px 0 120px;
+    padding: 34px 120px 0 10px;
     background-color: rgba(0,0,0,0.6);
   }
   @media (max-width: 800px){
