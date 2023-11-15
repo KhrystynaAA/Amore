@@ -30,7 +30,7 @@ html {
   }
  
   .logo {
-    width: 20vw;
+    width: 8vw;
   }
   #btn__menu{
     display: none;
@@ -84,7 +84,7 @@ html {
   #btn__menu{
     display: flex;
     position: absolute;
-    height: 2.5rem;
+    
     left: 75%;
   }
 
