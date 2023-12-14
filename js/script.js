@@ -1,30 +1,22 @@
-
-
-btn__menu.onclick=function myFunc(){
-    let x =document.getElementById('home');
-    x.className += " responsive";
-    let y = document.getElementById('menu');
-    y.classList.remove("hide__menu");
+btn__home.onclick=()=>{
+    let x =document.getElementById('home__menu');
     
-}
-btn__close.onclick = ()=>{
-    let x= document.getElementById('home');
-    x.classList.remove("responsive");
-    
+    x.classList.remove("hide__menu");
+    let y=document.getElementById('recommended');
+        y.classList.remove("active");
 }
 
 const sectionCenter = document.querySelector('.recommended');
-const filterBtns = document.querySelectorAll('.nav__link');
+const filterBtns = document.querySelectorAll('.main__link');
+const filterBtnsBaner = document.querySelectorAll('.nav__link');
 
 filterBtns.forEach((btn)=>{
     btn.addEventListener("click", (e)=>{
         let x=document.getElementById('recommended');
         x.className += " active";
-        let y = document.getElementById('menu');
+        let y = document.getElementById('home__menu');
         y.className += " hide__menu";
-        let z= document.getElementById('home');
-        z.classList.remove("responsive");
-    
+        
         const Category=e.currentTarget.dataset.id;
         const menuCategory = menu.filter((menuItem)=>{
             if(menuItem.Category==Category){
@@ -35,7 +27,16 @@ filterBtns.forEach((btn)=>{
         document.getElementById('recommended').scrollIntoView();
     })
 })
-
+filterBtnsBaner.forEach((btn)=>{
+    btn.addEventListener("click", (e)=>{
+        let x=document.getElementById('burg__menu');
+        x.className += " collapsed";
+        x.ariaExpanded = "false";
+        let y = document.getElementById('responsive');
+        y.classList.remove("show");
+        
+    })
+})
 const menu = [
     {
         id: 1,
