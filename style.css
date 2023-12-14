@@ -31,48 +31,10 @@ html {
   }
  
   .logo {
-    width: 2.5vw;
+    width: 20%;
     align-self: center;
   }
-  .menu-bar{
-    overflow-x: scroll;
-    overflow-y: hidden;
-    -webkit-overflow-scrolling: touch;
-  }
-   ::-webkit-scrollbar{
-    width: 0.5em;
-    height: 0.5em;
-  }
-   ::-webkit-scrollbar-track{
-    background: hsl(120, 4%, 35%);
-    border-radius: 100vw;
-    margin-block: .5em;
-  }
-  ::-webkit-scrollbar-thumb{
-    background: #000;
-    border-radius: 100vw;
-  }
-  ::-webkit-scrollbar-thumb:hover{
-    background: hsl(120 4% 60% / 1);
-  }
-  .menu-list{
-    display: flex;
-    margin: 0;
-    padding-bottom: 5px;
-  }
-  .menu-list > button{
-    display: inline;
-    color: rgb(130, 74, 0);
-    font-size: 15px;
-    min-width: 15vw;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-  }
-  .menu-list > button:hover{
-    color: rgb(211, 191, 109);
-    border-bottom: 2px solid rgb(130, 74, 0);
-  }
+  
   
   .header__top {
     display: flex;
