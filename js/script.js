@@ -40,21 +40,48 @@ filterBtnsBaner.forEach((btn)=>{
 const menu = [
     {
         id: 1,
+        title:"Аморе",
+        Category: "pizza",
+        article: "Піца",
+        description: "Салямі, шинка, курка, помідор, сир, яйце (може бути без) ",
+        price: "Діаметр 22см - 80UAH <br> Діаметр 32см - 150UAH <br> Діаметр 50см - 260UAH",
+        img: "img/products/pizza/amore.jpg"
+    },
+    {
+        id: 2,
+        title:"Монтана",
+        Category: "pizza",
+        article: "",
+        description: "Помідор, салямі, печериці, перець, кукурудза, сир",
+        price: "Діаметр 22см - 80UAH <br> Діаметр 32см - 150UAH <br> Діаметр 50см - 260UAH",
+        img: "img/products/pizza/montana.jpg"
+    },
+    {
+        id: 3,
+        title:"Тачіно",
+        Category: "pizza",
+        article: "",
+        description: "Курка, печериці, кукурудза, перець, цибуля, сир",
+        price: "Діаметр 22см - 80UAH <br> Діаметр 32см - 150UAH <br> Діаметр 50см - 260UAH",
+        img: "img/products/pizza/tachino.jpg"
+    },
+    {
+        id: 4,
+        title:"Капріча",
+        Category: "pizza",
+        article: "",
+        description: "Шинка, печериці, болгарський перець, сир",
+        price: "Діаметр 22см - 80UAH <br> Діаметр 32см - 150UAH <br> Діаметр 50см - 260UAH",
+        img: "img/products/pizza/capricha.jpg"
+    },
+    {
+        id: 10,
         title:"Каліфорнія",
         Category: "roly",
         article: "Роли",
         description: "Сир, лосось, рис, огірок",
         price: "150UAH",
         img: "img/products/sushi/sushi1.png"
-    },
-    {
-        id: 2,
-        title:"Аморе",
-        Category: "pizza",
-        article: "Піца",
-        description: "Сир, помідор, кукурудза, печериці",
-        price: "120UAH",
-        img: "img/products/pizza/pizza1.png"
     },
 ]
 
@@ -72,7 +99,6 @@ function displayMenusItem(menuItem){
         <article class="product">
           <img
             src=${item.img}
-            alt="Bose portable Smart speaker"
             class="product__photo"
           >
           <h3 class="title">${item.title}</h3>
