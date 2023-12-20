@@ -200,7 +200,15 @@ const menu = [
         price: "Діаметр 22см - 100UAH <br> Діаметр 32см - 150UAH <br> Діаметр 50см - 260UAH",
         img: "img/products/pizza/podyhDragon.jpg"
     },
-    
+    {
+        id: 19,
+        title:"Прімавера",
+        Category: "pizza",
+        article: "Піца",
+        description: "Шинка, печериці, квашений огірок, цибуля, сир",
+        price: "Діаметр 22см - 80UAH <br> Діаметр 32см - 150UAH <br> Діаметр 50см - 260UAH",
+        img: "img/products/pizza/primavera.jpg"
+    },
     {
         id: 50,
         title:"Каліфорнія",
