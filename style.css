@@ -405,6 +405,10 @@ footer{
   color: rgb(73, 70, 71);
   font-weight: normal;
 }
+.mypd-10{
+  padding-left: 10px;
+  padding-right: 10px;
+}
 .icon-link{
   color: rgb(5, 5, 5);
   font-size: 40px;
