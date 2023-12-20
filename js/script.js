@@ -88,7 +88,7 @@ const menu = [
         title:"IV сири (з грушею)",
         Category: "pizza",
         article: "Піца",
-        description: "Моцарелла, ементаль, горгонзола, пармезан, спеції",
+        description: "Моцарела, ементаль, горгонзола, пармезан, спеції",
         price: "Діаметр 22см - 100UAH <br> Діаметр 32см - 200UAH <br> Діаметр 50см - 290UAH",
         img: "img/products/pizza/fourCheese.jpg"
     },
@@ -97,7 +97,7 @@ const menu = [
         title:"Полло",
         Category: "pizza",
         article: "Піца",
-        description: "Курочка, моцарелла, помідор, кукурудза",
+        description: "Курочка, моцарела, помідор, кукурудза",
         price: "Діаметр 22см - 80UAH <br> Діаметр 32см - 150UAH <br> Діаметр 50см - 260UAH",
         img: "img/products/pizza/polo.jpg"
     },
