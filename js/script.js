@@ -38,8 +38,7 @@ filterBtnsBaner.forEach((btn)=>{
     })
 })
 const menu = [
-    {
-        id: 1,
+    { id: 1,
         title:"Аморе",
         Category: "pizza",
         article: "Піца",
@@ -208,6 +207,96 @@ const menu = [
         description: "Шинка, печериці, квашений огірок, цибуля, сир",
         price: "Діаметр 22см - 80UAH <br> Діаметр 32см - 150UAH <br> Діаметр 50см - 260UAH",
         img: "img/products/pizza/primavera.jpg"
+    },
+    {
+        id: 20,
+        title:"Грибна",
+        Category: "pizza",
+        article: "Піца",
+        description: "Олія, печериці, часник, сир, пармезан",
+        price: "Діаметр 22см - 80UAH <br> Діаметр 32см - 140UAH <br> Діаметр 50см - 260UAH",
+        img: "img/products/pizza/mashroom.jpg"
+    },
+    {
+        id: 21,
+        title:"Чікен",
+        Category: "pizza",
+        article: "Піца",
+        description: "Курка, шинка, болгарський перець, сир",
+        price: "Діаметр 22см - 80UAH <br> Діаметр 32см - 150UAH <br> Діаметр 50см - 250UAH",
+        img: "img/products/pizza/chicken.jpg"
+    },
+    {
+        id: 22,
+        title:"Сальса",
+        Category: "pizza",
+        article: "Піца",
+        description: "Мисливські ковбаски, курка, в'ялені помідори, оливки зелені, сир",
+        price: "Діаметр 22см - 100UAH <br> Діаметр 32см - 170UAH <br> Діаметр 50см - 280UAH",
+        img: "img/products/pizza/salsa.jpg"
+    },
+    {
+        id: 23,
+        title:"Полермо",
+        Category: "pizza",
+        article: "Піца",
+        description: "Курка, салямі, помідор, сир",
+        price: "Діаметр 22см - 80UAH <br> Діаметр 32см - 150UAH <br> Діаметр 50см - 260UAH",
+        img: "img/products/pizza/polermo.jpg"
+    },
+    {
+        id: 24,
+        title:"М'ясна",
+        Category: "pizza",
+        article: "Піца",
+        description: "Шинка, курка, салямі, бочок, мисливська ковбаска, часник, помідор, сир",
+        price: "Діаметр 22см - 100UAH <br> Діаметр 32см - 180UAH <br> Діаметр 50см - 280UAH",
+        img: "img/products/pizza/meat.jpg"
+    },
+    {
+        id: 25,
+        title:"Асорті",
+        Category: "pizza",
+        article: "Піца",
+        description: "Грибна/Салямі/Капріча/Домашня",
+        price: "Діаметр 50см - 270UAH",
+        img: "img/products/pizza/asorti.jpg"
+    },
+    {
+        id: 26,
+        title:"Маргарита",
+        Category: "pizza",
+        article: "Піца",
+        description: "Соус, подвійний сир",
+        price: "Діаметр 22см - 70UAH <br> Діаметр 32см - 130UAH",
+        img: "img/products/pizza/margaryta.jpg"
+    },
+    {
+        id: 27,
+        title:"Б'янка",
+        Category: "pizza",
+        article: "Піца",
+        description: "Вершковий соус, курка, печериці, дор Блю, моцарела, кукурудза, помідор",
+        price: "Діаметр 22см - 100UAH <br> Діаметр 32см - 180UAH <br> Діаметр 50см - 280UAH",
+        img: "img/products/pizza/bianka.jpg"
+    },
+    {
+        id: 28,
+        title:"Мисливська",
+        Category: "pizza",
+        article: "Піца",
+        description: "Вершковий соус, мисливська ковбаска, часник, печериці, моцарела, квашений огірок",
+        price: "Діаметр 22см - 100UAH <br> Діаметр 32см - 160UAH <br> Діаметр 50см - 260UAH",
+        img: "img/products/pizza/myslyvska.jpg"
+    },
+    {
+        id: 29,
+        title:"Упаковка для піци",
+        Category: "pizza",
+        article: "Піца",
+        description:"",
+        price: "Діаметр 22см - 10UAH <br> Діаметр 32см - 15UAH",
+        img: "img/products/pizza/case.jpg"
     },
     {
         id: 50,
