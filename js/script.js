@@ -297,16 +297,7 @@ const menu = [
         description:"",
         price: "Діаметр 22см - 10UAH <br> Діаметр 32см - 15UAH",
         img: "img/products/pizza/case.jpg"
-    },
-    {
-        id: 50,
-        title:"Каліфорнія",
-        Category: "roly",
-        article: "Роли",
-        description: "Сир, лосось, рис, огірок",
-        price: "150UAH",
-        img: "img/products/sushi/sushi1.png"
-    },
+    }, 
 ]
 
 window.addEventListener("DOMContentLoaded", ()=>{
