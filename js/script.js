@@ -18,13 +18,19 @@ filterBtns.forEach((btn)=>{
         y.className += " hide__menu";
         
         const Category=e.currentTarget.dataset.id;
-        const menuCategory = menu.filter((menuItem)=>{
+       /* const menuCategory = menu.filter((menuItem)=>{
             if(menuItem.Category==Category){
                 return menuItem;
             }
-        })
-        displayMenusItem(menuCategory);
-        document.getElementById('recommended').scrollIntoView();
+        })*/
+        const sectionCategory = sections.filter((sectionItem)=>Category.includes(sectionItem.mainCategory));
+        const sectionCategoryIndexes = sectionCategory.map(category => category.id);
+
+       const menuCategory = menu.filter(menuItem => sectionCategoryIndexes.includes(menuItem.categoryIndex));
+
+        
+        displayMenusItem(sectionCategory, menuCategory);
+       // document.getElementById('recommended').scrollIntoView();
     })
 })
 filterBtnsBaner.forEach((btn)=>{
@@ -38,12 +44,14 @@ filterBtnsBaner.forEach((btn)=>{
     })
 })
 const menu = [
-    { id: 1,
+    {
+        id: 1,
         title:"Аморе",
         Category: "pizza",
         article: "Піца",
         description: "Салямі, шинка, курка, помідор, сир, яйце (може бути без) ",
         price: "Діаметр 22см - 80UAH <br> Діаметр 32см - 150UAH <br> Діаметр 50см - 260UAH",
+        categoryIndex: 5,
         img: "img/products/pizza/amore.jpg"
     },
     {
@@ -53,6 +61,7 @@ const menu = [
         article: "Піца",
         description: "Помідор, салямі, печериці, перець, кукурудза, сир",
         price: "Діаметр 22см - 80UAH <br> Діаметр 32см - 150UAH <br> Діаметр 50см - 260UAH",
+        categoryIndex: 5,
         img: "img/products/pizza/montana.jpg"
     },
     {
@@ -62,6 +71,7 @@ const menu = [
         article: "Піца",
         description: "Курка, печериці, кукурудза, перець, цибуля, сир",
         price: "Діаметр 22см - 80UAH <br> Діаметр 32см - 150UAH <br> Діаметр 50см - 260UAH",
+        categoryIndex: 5,
         img: "img/products/pizza/tachino.jpg"
     },
     {
@@ -71,6 +81,7 @@ const menu = [
         article: "Піца",
         description: "Шинка, печериці, болгарський перець, сир",
         price: "Діаметр 22см - 80UAH <br> Діаметр 32см - 150UAH <br> Діаметр 50см - 260UAH",
+        categoryIndex: 5,
         img: "img/products/pizza/capricha.jpg"
     },
     {
@@ -80,6 +91,7 @@ const menu = [
         article: "Піца",
         description: "Курка, креветки, болгарський перець, сир",
         price: "Діаметр 22см - 100UAH <br> Діаметр 32см - 200UAH <br> Діаметр 50см - 290UAH",
+        categoryIndex: 5,
         img: "img/products/pizza/paza.jpg"
     },
     {
@@ -89,6 +101,7 @@ const menu = [
         article: "Піца",
         description: "Моцарела, ементаль, горгонзола, пармезан, спеції",
         price: "Діаметр 22см - 100UAH <br> Діаметр 32см - 200UAH <br> Діаметр 50см - 290UAH",
+        categoryIndex: 5,
         img: "img/products/pizza/fourCheese.jpg"
     },
     {
@@ -98,6 +111,7 @@ const menu = [
         article: "Піца",
         description: "Курочка, моцарела, помідор, кукурудза",
         price: "Діаметр 22см - 80UAH <br> Діаметр 32см - 150UAH <br> Діаметр 50см - 260UAH",
+        categoryIndex: 5,
         img: "img/products/pizza/polo.jpg"
     },
     {
@@ -107,6 +121,7 @@ const menu = [
         article: "Піца",
         description: "Курка, ананас, болгарський перець, сир",
         price: "Діаметр 22см - 80UAH <br> Діаметр 32см - 150UAH <br> Діаметр 50см - 260UAH",
+        categoryIndex: 5,
         img: "img/products/pizza/mexykanska.jpg"
     },
     {
@@ -116,6 +131,7 @@ const menu = [
         article: "Піца",
         description: "Курка, печериці, помідор, цибуля, пекінська капуста, сир",
         price: "Діаметр 22см - 80UAH <br> Діаметр 32см - 150UAH <br> Діаметр 50см - 260UAH",
+        categoryIndex: 5,
         img: "img/products/pizza/domashnia.jpg"
     },
     {
@@ -125,6 +141,7 @@ const menu = [
         article: "Піца",
         description: "Сир, бекон, печериці, яйце, пармезан",
         price: "Діаметр 22см - 80UAH <br> Діаметр 32см - 150UAH <br> Діаметр 50см - 260UAH",
+        categoryIndex: 5,
         img: "img/products/pizza/carbonara.jpg"
     },
     {
@@ -134,6 +151,7 @@ const menu = [
         article: "Піца",
         description: "Салямі, сир",
         price: "Діаметр 22см - 80UAH <br> Діаметр 32см - 140UAH <br> Діаметр 50см - 260UAH",
+        categoryIndex: 5,
         img: "img/products/pizza/saliami.jpg"
     },
     {
@@ -143,6 +161,7 @@ const menu = [
         article: "Піца",
         description: "Філе лосося, перець, соус вершковий, сир",
         price: "Діаметр 22см - 100UAH <br> Діаметр 32см - 200UAH <br> Діаметр 50см - 280UAH",
+        categoryIndex: 5,
         img: "img/products/pizza/majore.jpg"
     },
     {
@@ -152,6 +171,7 @@ const menu = [
         article: "Піца",
         description: "Тунець, цибуля, болгарський перець, кукурудза, сир",
         price: "Діаметр 32см - 180UAH <br> Діаметр 50см - 270UAH",
+        categoryIndex: 5,
         img: "img/products/pizza/tune.jpg"
     },
     {
@@ -161,6 +181,7 @@ const menu = [
         article: "Піца",
         description: "Шинка, печериці, болгарський перець, цибуля, сир + сирний соус",
         price: "Діаметр 32см - 150UAH ",
+        categoryIndex: 5,
         img: "img/products/pizza/liguriia.jpg"
     },
     {
@@ -170,6 +191,7 @@ const menu = [
         article: "Піца",
         description: "Курка, шинка, печериці, болгарський перець, сир + пармезан",
         price: "Діаметр 22см - 80UAH <br> Діаметр 32см - 150UAH ",
+        categoryIndex: 5,
         img: "img/products/pizza/calcone.jpg"
     },
     {
@@ -179,6 +201,7 @@ const menu = [
         article: "Піца",
         description: "Морепродукти, лимон, перець, сир",
         price: "Діаметр 22см - 100UAH <br> Діаметр 32см - 180UAH <br> Діаметр 50см - 280UAH",
+        categoryIndex: 5,
         img: "img/products/pizza/seaCocktail.jpg"
     },
     {
@@ -188,6 +211,7 @@ const menu = [
         article: "Піца",
         description: "Вершкова основа, печериці, оливки, прошутто, помідор, сир, пармезан",
         price: "Діаметр 22см - 100UAH <br> Діаметр 32см - 200UAH <br> Діаметр 50см - 300UAH",
+        categoryIndex: 5,
         img: "img/products/pizza/proshuto.jpg"
     },
     {
@@ -197,6 +221,7 @@ const menu = [
         article: "Піца",
         description: "Чілі, салямі, оливки, помідор, сир",
         price: "Діаметр 22см - 100UAH <br> Діаметр 32см - 150UAH <br> Діаметр 50см - 260UAH",
+        categoryIndex: 5,
         img: "img/products/pizza/podyhDragon.jpg"
     },
     {
@@ -206,6 +231,7 @@ const menu = [
         article: "Піца",
         description: "Шинка, печериці, квашений огірок, цибуля, сир",
         price: "Діаметр 22см - 80UAH <br> Діаметр 32см - 150UAH <br> Діаметр 50см - 260UAH",
+        categoryIndex: 5,
         img: "img/products/pizza/primavera.jpg"
     },
     {
@@ -215,6 +241,7 @@ const menu = [
         article: "Піца",
         description: "Олія, печериці, часник, сир, пармезан",
         price: "Діаметр 22см - 80UAH <br> Діаметр 32см - 140UAH <br> Діаметр 50см - 260UAH",
+        categoryIndex: 5,
         img: "img/products/pizza/mashroom.jpg"
     },
     {
@@ -224,6 +251,7 @@ const menu = [
         article: "Піца",
         description: "Курка, шинка, болгарський перець, сир",
         price: "Діаметр 22см - 80UAH <br> Діаметр 32см - 150UAH <br> Діаметр 50см - 250UAH",
+        categoryIndex: 5,
         img: "img/products/pizza/chicken.jpg"
     },
     {
@@ -233,6 +261,7 @@ const menu = [
         article: "Піца",
         description: "Мисливські ковбаски, курка, в'ялені помідори, оливки зелені, сир",
         price: "Діаметр 22см - 100UAH <br> Діаметр 32см - 170UAH <br> Діаметр 50см - 280UAH",
+        categoryIndex: 5,
         img: "img/products/pizza/salsa.jpg"
     },
     {
@@ -242,6 +271,7 @@ const menu = [
         article: "Піца",
         description: "Курка, салямі, помідор, сир",
         price: "Діаметр 22см - 80UAH <br> Діаметр 32см - 150UAH <br> Діаметр 50см - 260UAH",
+        categoryIndex: 5,
         img: "img/products/pizza/polermo.jpg"
     },
     {
@@ -251,6 +281,7 @@ const menu = [
         article: "Піца",
         description: "Шинка, курка, салямі, бочок, мисливська ковбаска, часник, помідор, сир",
         price: "Діаметр 22см - 100UAH <br> Діаметр 32см - 180UAH <br> Діаметр 50см - 280UAH",
+        categoryIndex: 5,
         img: "img/products/pizza/meat.jpg"
     },
     {
@@ -260,6 +291,7 @@ const menu = [
         article: "Піца",
         description: "Грибна/Салямі/Капріча/Домашня",
         price: "Діаметр 50см - 270UAH",
+        categoryIndex: 5,
         img: "img/products/pizza/asorti.jpg"
     },
     {
@@ -269,6 +301,7 @@ const menu = [
         article: "Піца",
         description: "Соус, подвійний сир",
         price: "Діаметр 22см - 70UAH <br> Діаметр 32см - 130UAH",
+        categoryIndex: 5,
         img: "img/products/pizza/margaryta.jpg"
     },
     {
@@ -278,6 +311,7 @@ const menu = [
         article: "Піца",
         description: "Вершковий соус, курка, печериці, дор Блю, моцарела, кукурудза, помідор",
         price: "Діаметр 22см - 100UAH <br> Діаметр 32см - 180UAH <br> Діаметр 50см - 280UAH",
+        categoryIndex: 5,
         img: "img/products/pizza/bianka.jpg"
     },
     {
@@ -287,6 +321,7 @@ const menu = [
         article: "Піца",
         description: "Вершковий соус, мисливська ковбаска, часник, печериці, моцарела, квашений огірок",
         price: "Діаметр 22см - 100UAH <br> Діаметр 32см - 160UAH <br> Діаметр 50см - 260UAH",
+        categoryIndex: 5,
         img: "img/products/pizza/myslyvska.jpg"
     },
     {
@@ -296,21 +331,194 @@ const menu = [
         article: "Піца",
         description:"",
         price: "Діаметр 22см - 10UAH <br> Діаметр 32см - 15UAH",
+        categoryIndex: 5,
         img: "img/products/pizza/case.jpg"
-    }, 
+    },
+    {
+        id: 50,
+        title:"Каліфорнія",
+        Category: "roly",
+        article: "Роли",
+        description: "Сир, лосось, рис, огірок",
+        price: "150UAH",
+        categoryIndex: 1,
+        img: "img/products/sushi/sushi1.png"
+    },
+    {
+        id: 51,
+        title:"філадельфія",
+        Category: "roly",
+        article: "Роли",
+        description: "Сир, лосось, рис, огірок",
+        price: "150UAH",
+        categoryIndex: 2,
+        img: "img/products/sushi/sushi1.png"
+    },
+]
+const sections =[
+    {
+        id: 1,
+        title: "Роли",
+        category: "roly",
+        mainCategory: "rolys"
+
+    },
+    {
+        id: 2,
+        title: "Теплі роли",
+        category: "warm-roly",
+        mainCategory: "rolys"
+
+    },
+    {
+        id: 3,
+        title: "Сети",
+        category: "sety",
+        mainCategory: "rolys"
+
+    },
+    {
+        id: 4,
+        title: "Спрінг роли",
+        category: "spring-roly",
+        mainCategory: "rolys"
+
+    },
+    {
+        id: 5,
+        title: "Піца",
+        category: "pizza",
+        mainCategory:"pizza"
+
+    },
+    {
+        id: 6,
+        title: "Склади свою піцу",
+        category: "own-pizza",
+        mainCategory: "pizza"
+
+    },
+    {
+        id: 7,
+        title: "Безалкогольні напої",
+        category: "free-alcohol-drinks"
+
+    },
+    {
+        id: 8,
+        title: "Гарячі напої",
+        category: "warm-drinks"
+
+    },
+    {
+        id: 9,
+        title: "Безалкогольні коктейлі",
+        category: "free-alcohol-cocteils"
+
+    },
+    {
+        id: 10,
+        title: "Молочні коктейлі",
+        category: "milk-cocteils"
+
+    },
+    {
+        id: 11,
+        title: "Алкогольні напої",
+        category: "alcohol-drinks"
+
+    },
+    {
+        id: 12,
+        title: "Алкогольні коктейлі",
+        category: "alcohol-cocteils"
+
+    },
+    {
+        id: 13,
+        title: "Холодні напої",
+        category: "cold-drinks"
+
+    },
+    {
+        id: 14,
+        title: "Sushi bowl",
+        category: "sushi-bowl"
+
+    },
+    {
+        id: 15,
+        title: "Салати",
+        category: "salads"
+
+    },
+    {
+        id: 16,
+        title: "Морозиво",
+        category: "ice-cream"
+
+    },
+    {
+        id: 17,
+        title: "До пива",
+        category: "beer-menu"
+
+    },
 ]
 
 window.addEventListener("DOMContentLoaded", ()=>{
     displayMenusItem(menu);
 });
 
-function displayMenusItem(menuItem){
+function displayMenusItem(sectionItem, menuItems) {
+    let subMenu = sectionItem.map((item) => {
+        return `<a  href="#${item.category}">${item.title}</a>`;
+    });
+    
+    subMenu = subMenu.join(" | ");
+    let displayTitle = sectionItem.map((item) => {
+        const filteredMenuItems = menuItems.filter((oneItem) => {
+            if(oneItem.categoryIndex==item.id){
+                return oneItem;
+    }
+});
+        let displayMenusItem = filteredMenuItems.map((menuItem) => {
+            return `      
+                <div class="col-sm-12 col-lg-4 col-md-6" id="${item.category}">
+                    <div class="card-menu">
+                        <img src=${menuItem.img} class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-text">
+                                <h3 class="title">${menuItem.title}</h3>
+                                <p class="Category">${menuItem.description}</p>
+                                <p class="price">${menuItem.price}</p>
+                            </p>
+                        </div>
+                    </div>
+                </div>`;
+        });
+        displayMenusItem = displayMenusItem.join("");
+        return `<h2 class="recommended__title">${item.title}</h2>${displayMenusItem}<br>`;
+    });
+
+    displayTitle = displayTitle.join("");
+    sectionCenter.innerHTML = `<nav class="d-inline">${subMenu}</nav><br>${displayTitle}`;
+}
+
+/*function displaySubMenusItem(menuItem, subCategory){
+    
     let name__article;
-    let displayMenusItem = menuItem.map((item)=>{
+    let subCat = subCategory.map((category) => {
+        return `<a href="#${category}">${category}</a>`;
+    });
+    
+    subCat = subCat.join(" | ");
+    let displaySubMenusItem = menuItem.map((item)=>{
         name__article=item.article;
+        
         return `      
         
-			<div class="col-sm-12 col-lg-4 col-md-6 " >
+			<div class="col-sm-12 col-lg-4 col-md-6 id="${subCategory[item.categoryIndex]}" >
 				<div class="card-menu">
 					<img src=${item.img} class="card-img-top">
 					<div class="card-body">
@@ -324,6 +532,38 @@ function displayMenusItem(menuItem){
 			</div>`;
     })
 
-    displayMenusItem = displayMenusItem.join("");
-    sectionCenter.innerHTML = `<h2 class="recommended__title">${name__article}</h2>${displayMenusItem}`;
+    displaySubMenusItem = displaySubMenusItem.join("");
+    sectionCenter.innerHTML = `<h2 class="recommended__title">${subCat}<br>${name__article}</h2>${displaySubMenusItem}`;
 }
+/*<script>
+  // Отримайте всі кнопки за класом
+  var buttons = document.getElementsByClassName('main__link');
+
+  // Отримайте контейнер для підкатегорій
+  var subcategoriesContainer = document.getElementById('subcategories-container');
+
+  // Створіть обробник подій для кожної кнопки
+  Array.from(buttons).forEach(function(button) {
+    button.addEventListener('click', function() {
+      // Очистіть контейнер перед додаванням нового вмісту
+      subcategoriesContainer.innerHTML = '';
+
+      // Отримайте data-id з кнопки
+      var categoryId = button.getAttribute('data-id');
+
+      // Здійсніть дії відповідно до категорії
+      switch (categoryId) {
+        case 'roly':
+          // Додайте підкатегорії для ролів
+          subcategoriesContainer.innerHTML = '<p>Підкатегорії для Ролів</p>';
+          break;
+        case 'pizza':
+          // Додайте підкатегорії для піци
+          subcategoriesContainer.innerHTML = '<p>Підкатегорії для Піци</p>';
+          break;
+        // Додайте інші категорії, якщо потрібно
+      }
+    });
+  });
+</script>
+*/
