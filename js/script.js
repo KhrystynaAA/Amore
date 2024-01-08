@@ -505,7 +505,7 @@ function displayMenusItem(sectionItem, menuItems) {
                 </div>`;
         });
         displayMenusItem = displayMenusItem.join("");
-        return `<h2 class="recommended__title" id="${item.category}">${item.title}</h2>${displayMenusItem}<br>`;
+        return `<h2 class="recommended__title" style="margin-top:50px;" id="${item.category}">${item.title}</h2>${displayMenusItem}<br>`;
     });
 
     displayTitle = displayTitle.join("");
