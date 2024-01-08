@@ -59,6 +59,7 @@ html {
   left: 20px;
   cursor: pointer;
   font-size: 34px;
+  color: rgb(160, 158, 155);
   display: none;
 }
 .back-button:hover{
