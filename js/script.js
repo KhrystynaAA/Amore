@@ -560,7 +560,7 @@ const menu = [
         categoryIndex: 3,
         img: "img/products/sushi/set_cake.jpg"
     },
-	{
+{
         id: 120,
         title:"Орео Айс",
         Category: "drinks",
@@ -637,43 +637,50 @@ const sections =[
     {
         id: 7,
         title: "Безалкогольні напої",
-        category: "free-alcohol-drinks"
+        category: "free-alcohol-drinks",
+        mainCategory: "drinks"
 
     },
     {
         id: 8,
         title: "Гарячі напої",
-        category: "warm-drinks"
+        category: "warm-drinks",
+        mainCategory: "drinks"
 
     },
     {
         id: 9,
         title: "Безалкогольні коктейлі",
-        category: "free-alcohol-cocteils"
+        category: "free-alcohol-cocteils",
+        mainCategory: "drinks"
 
     },
     {
         id: 10,
         title: "Молочні коктейлі",
-        category: "milk-cocteils"
+        category: "milk-cocteils",
+        mainCategory: "drinks"
 
     },
     {
         id: 11,
         title: "Алкогольні напої",
-        category: "alcohol-drinks"
+        category: "alcohol-drinks",
+        mainCategory: "drinks"
 
     },
     {
         id: 12,
         title: "Алкогольні коктейлі",
-        category: "alcohol-cocteils"
+        category: "alcohol-cocteils",
+        mainCategory: "drinks"
 
     },
     {
         id: 13,
         title: "Холодні напої",
-        category: "cold-drinks"
+        category: "cold-drinks",
+        mainCategory: "drinks"
 
     },
     {
