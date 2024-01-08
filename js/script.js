@@ -471,14 +471,14 @@ const menu = [
         img: "img/products/sushi/green_dragon_shrimp.jpg"
     },
     {
-        id: 70,
-        title:"Сирний з лососем",
+        id: 58,
+        title:"Білий дракон",
         Category: "roly",
         article: "Роли",
-        description: "Рис, норі, сир Філадельфія, огірок, лосось, сир Чеддер, соус Унагі, кунжут",
+        description: "Рис, норі, сир Філадельфія, лосось, тостерний сир, кунжут",
         price: "150UAH",
         categoryIndex: 1,
-        img: "img/products/sushi/cheese_salmon.jpg"
+        img: "img/products/sushi/white_dragon.jpg"
     },
     {
         id: 71,
