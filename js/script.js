@@ -30,6 +30,13 @@ filterBtns.forEach((btn)=>{
 
         
         displayMenusItem(sectionCategory, menuCategory);
+	    const elementPosition = document.getElementById('recommended').getBoundingClientRect().top;
+        
+        // Проводимо прокрутку до певної відстані вище від початку елемента
+        window.scrollTo({
+            top: window.scrollY + elementPosition - 150, // Встановлюємо відстань у 150 пікселів вище від верхнього краю елемента
+            behavior: 'smooth'
+        });
        // document.getElementById('recommended').scrollIntoView();
     })
 })
