@@ -350,25 +350,215 @@ const menu = [
         categoryIndex: 5,
         img: "img/products/pizza/case.jpg"
     },
-    {
-        id: 50,
-        title:"Каліфорнія",
+       {
+        id: 45,
+        title:"Філадельфія",
         Category: "roly",
         article: "Роли",
-        description: "Сир, лосось, рис, огірок",
+        description: "Рис, норі, лосось, авокадо, огірок, сир Філадельфія",
         price: "150UAH",
         categoryIndex: 1,
-        img: "img/products/sushi/sushi1.png"
+        img: ""
+    },
+    {
+        id: 46,
+        title:"Філадельфія з креветкою",
+        Category: "roly",
+        article: "Роли",
+        description: "Рис, норі, лосось, сир Філадельфія, креветки",
+        price: "170UAH",
+        categoryIndex: 1,
+        img: "img/products/sushi/filadelfia_shrimp.jpg"
+    },
+    {
+        id: 47,
+        title:"Black Філадельфія",
+        Category: "roly",
+        article: "Роли",
+        description: "Рис, норі, лосось, сир Філадельфія, огірок, ікра Масаго",
+        price: "160UAH",
+        categoryIndex: 1,
+        img: ""
+    },
+    {
+        id: 48,
+        title:"Філадельфія вега",
+        Category: "roly",
+        article: "Роли",
+        description: "Рис, норі, сир Філадельфія, огірок, авокадо, кунжут, соус Унагі",
+        price: "120UAH",
+        categoryIndex: 1,
+        img: ""
+    },
+    {
+        id: 49,
+        title:"Філадельфія з Вугрем",
+        Category: "roly",
+        article: "Роли",
+        description: "Рис, норі, сир Філадельфія, огірок, вугор, авокадо, кунжут",
+        price: "150UAH",
+        categoryIndex: 1,
+        img: "img/products/sushi/filadelfia_eel.jpg"
+    },
+    {
+        id: 50,
+        title:"Філадельфія Масаго",
+        Category: "roly",
+        article: "Роли",
+        description: "Рис, норі, лосось, сир Філадельфія, огірок, ікра Масаго",
+        price: "140UAH",
+        categoryIndex: 1,
+        img: "img/products/sushi/filadelfia_masaho.jpg"
     },
     {
         id: 51,
-        title:"філадельфія",
+        title:"Каліфорнія",
         Category: "roly",
         article: "Роли",
-        description: "Сир, лосось, рис, огірок",
+        description: "Рис, норі, сир Філадельфія, огірок, авокадо, креветки, ікра Масаго",
+        price: "150UAH",
+        categoryIndex: 1,
+        img: "img/products/sushi/californiia.jpg"
+    },
+    {
+        id: 52,
+        title:"Каліфорнія з Вугрем",
+        Category: "roly",
+        article: "Роли",
+        description: "Рис, норі, сир Філадельфія, огірок, авокадо, вугор, креветки, ікра Масаго",
+        price: "150UAH",
+        categoryIndex: 1,
+        img: "img/products/sushi/californiia_eel.jpg"
+    },
+    {
+        id: 53,
+        title:"Каліфорнія Домінікана",
+        Category: "roly",
+        article: "Роли",
+        description: "Рис, норі, сир Філадельфія, огірок, авокадо, креветки, ікра Масаго",
+        price: "150UAH",
+        categoryIndex: 1,
+        img: "img/products/sushi/californiia_dominikana.jpg"
+    },
+    {
+        id: 54,
+        title:"Рожевий Фламінго",
+        Category: "roly",
+        article: "Роли",
+        description: "Рис, норі, сир Філадельфія, огірок, мідії",
+        price: "130UAH",
+        categoryIndex: 1,
+        img: "img/products/sushi/pink_flamingo.jpg"
+    },
+    {
+        id: 55,
+        title:"Зелений дракон з вугрем",
+        Category: "roly",
+        article: "Роли",
+        description: "Рис, норі, сир Філадельфія, вугор, авокадо, соус Унагі, кунжут",
+        price: "170UAH",
+        categoryIndex: 1,
+        img: "img/products/sushi/green_dragon.jpg"
+    },
+    {
+        id: 56,
+        title:"Зелений дракон з креветкою",
+        Category: "roly",
+        article: "Роли",
+        description: "Рис, норі, сир Філадельфія, огірок, авокадо, креветки, соус Унагі, кунжут",
+        price: "170UAH",
+        categoryIndex: 1,
+        img: "img/products/sushi/green_dragon_shrimp.jpg"
+    },
+    {
+        id: 70,
+        title:"Сирний з лососем",
+        Category: "roly",
+        article: "Роли",
+        description: "Рис, норі, сир Філадельфія, огірок, лосось, сир Чеддер, соус Унагі, кунжут",
+        price: "150UAH",
+        categoryIndex: 1,
+        img: "img/products/sushi/cheese_salmon.jpg"
+    },
+    {
+        id: 71,
+        title:"Сирний з креветкою",
+        Category: "roly",
+        article: "Роли",
+        description: "Рис, норі, огірок, креветки, сир Філадельфія, тостерний сир, пармезан, соус Унагі",
+        price: "150UAH",
+        categoryIndex: 1,
+        img: "img/products/sushi/cheese_shrimp.jpg"
+    },
+    {
+        id: 81,
+        title:"Запечений рол з лососем",
+        Category: "roly",
+        article: "Теплі роли",
+        description: "Рис, сир Філадельфія, огірок, авокадо, лосось, соус Унагі, соус для запікання, кунжут",
         price: "150UAH",
         categoryIndex: 2,
-        img: "img/products/sushi/sushi1.png"
+        img: "img/products/sushi/warm_role_salmon.jpg"
+    },
+    {
+        id: 82,
+        title:'Запечений "Цезар"',
+        Category: "roly",
+        article: "Теплі роли",
+        description: "Рис, сир Філадельфія, огірок, копчена курка, салата, соус Унагі, соус для запікання, кунжут",
+        price: "150UAH",
+        categoryIndex: 2,
+        img: "img/products/sushi/warm_role_chicken.jpg"
+    },
+    {
+        id: 83,
+        title:"Запечений рол з креветкою",
+        Category: "roly",
+        article: "Теплі роли",
+        description: "Рис, сир Філадельфія, огірок, креветки, соус для запікання",
+        price: "150UAH",
+        categoryIndex: 2,
+        img: "img/products/sushi/warm_role_shrimp.jpg"
+    },
+    {
+        id: 84,
+        title:"Запечена мідія",
+        Category: "roly",
+        article: "Теплі роли",
+        description: "Рис, сир Філадельфія, огірок, зелена цибуля, мідії, соус для запікання",
+        price: "110UAH",
+        categoryIndex: 2,
+        img: "img/products/sushi/warm_role_mussel.jpg"
+    },
+    {
+        id: 85,
+        title:"Сет Асорті",
+        Category: "roly",
+        article: "Сети",
+        description: "Рол Філадельфія/Філадельфія з креветками/Каліфорнія/Чікен/Боніто/Сирний/Норі макі/Макі Сурімі/Городина кунжут/Макі з огірком",
+        price: "600UAH",
+        categoryIndex: 3,
+        img: "img/products/sushi/set_asorti.jpg"
+    },
+    {
+        id: 86,
+        title:'Сет "Філадельфія"',
+        Category: "roly",
+        article: "Сети",
+        description: "Філадельфія з лососем/Філадельфія з креветкою/Філадельфія вега/Філадельфія масаго",
+        price: "550UAH",
+        categoryIndex: 3,
+        img: "img/products/sushi/set_filadelfiia.jpg"
+    },
+    {
+        id: 87,
+        title:"Сет Торт",
+        Category: "roly",
+        article: "Сети",
+        description: "Рол Філадельфія/рол Філадельфія з вугрем у кунжуті/рол Боніто/рол Каліфорнія/рол Норі макі",
+        price: "630UAH",
+        categoryIndex: 3,
+        img: "img/products/sushi/set_cake.jpg"
     },
 ]
 const sections =[
