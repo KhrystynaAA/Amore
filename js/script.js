@@ -4,6 +4,8 @@ btn__home.onclick=()=>{
     x.classList.remove("hide__menu");
     let y=document.getElementById('recommended');
         y.classList.remove("active");
+	let z=document.getElementById('backBtn');
+    z.classList.remove("active");
 }
 function goBack (){
     let x =document.getElementById('home__menu');
