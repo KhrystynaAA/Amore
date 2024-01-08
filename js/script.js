@@ -560,6 +560,36 @@ const menu = [
         categoryIndex: 3,
         img: "img/products/sushi/set_cake.jpg"
     },
+	{
+        id: 120,
+        title:"Орео Айс",
+        Category: "drinks",
+        article: "Гарячі напої",
+        description: 'Еспресо, молоко, морозиво, печиво "Орео", аерозольні вершки',
+        price: "50UAH",
+        categoryIndex: 8,
+        img: "img/products/drinks/oreo_ice.jpg"
+    },
+    {
+        id: 140,
+        title:"ENJOY",
+        Category: "drinks",
+        article: "Алкогольні коктейлі",
+        description: 'Джин, н/с шампанське, спрайт, сироп полуничний, солодка вата',
+        price: "110UAH",
+        categoryIndex: 12,
+        img: "img/products/drinks/enjoy.jpg"
+    },
+    {
+        id: 141,
+        title:"Violet aperol",
+        Category: "drinks",
+        article: "Алкогольні коктейлі",
+        description: 'Джин, н/с шампанське, спрайт, сироп Лаванда та чорниця, лід',
+        price: "110UAH",
+        categoryIndex: 12,
+        img: "img/products/drinks/violet_aperol.jpg"
+    },
 ]
 const sections =[
     {
