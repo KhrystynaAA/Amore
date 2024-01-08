@@ -54,6 +54,16 @@ html {
     }
    
  }
+ .back-button {
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+  font-size: 34px;
+  display: none;
+}
+.back-button:hover{
+  color: rgb(222, 220, 216);
+}
  .header__bottom {
   margin-bottom: 0;
  }
