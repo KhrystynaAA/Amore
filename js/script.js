@@ -474,7 +474,7 @@ const sections =[
 ]
 
 window.addEventListener("DOMContentLoaded", ()=>{
-    displayMenusItem(menu);
+    displayMenusItem(sections, menu);
 });
 
 function displayMenusItem(sectionItem, menuItems) {
