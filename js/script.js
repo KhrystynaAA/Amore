@@ -5,6 +5,18 @@ btn__home.onclick=()=>{
     let y=document.getElementById('recommended');
         y.classList.remove("active");
 }
+function goBack (){
+    let x =document.getElementById('home__menu');
+    
+    x.classList.remove("hide__menu");
+    let y=document.getElementById('recommended');
+        y.classList.remove("active");
+    
+    let z=document.getElementById('backBtn');
+    z.classList.remove("active");
+    document.body.scrollTop = 0; 
+    document.documentElement.scrollTop = 0;
+}
 
 const sectionCenter = document.querySelector('.recommended');
 const filterBtns = document.querySelectorAll('.main__link');
@@ -16,13 +28,9 @@ filterBtns.forEach((btn)=>{
         x.className += " active";
         let y = document.getElementById('home__menu');
         y.className += " hide__menu";
-        
+        let z=document.getElementById('backBtn');
+        z.className +=" active";
         const Category=e.currentTarget.dataset.id;
-       /* const menuCategory = menu.filter((menuItem)=>{
-            if(menuItem.Category==Category){
-                return menuItem;
-            }
-        })*/
         const sectionCategory = sections.filter((sectionItem)=>Category.includes(sectionItem.mainCategory));
         const sectionCategoryIndexes = sectionCategory.map(category => category.id);
 
@@ -30,15 +38,16 @@ filterBtns.forEach((btn)=>{
 
         
         displayMenusItem(sectionCategory, menuCategory);
-	    const elementPosition = document.getElementById('recommended').getBoundingClientRect().top;
+       
+        const elementPosition = document.getElementById('recommended').getBoundingClientRect().top;
         
         // Проводимо прокрутку до певної відстані вище від початку елемента
         window.scrollTo({
             top: window.scrollY + elementPosition - 150, // Встановлюємо відстань у 150 пікселів вище від верхнього краю елемента
             behavior: 'smooth'
         });
-       // document.getElementById('recommended').scrollIntoView();
-    })
+            //document.getElementById('recommended').scrollIntoView();
+        })
 })
 filterBtnsBaner.forEach((btn)=>{
     btn.addEventListener("click", (e)=>{
@@ -479,9 +488,11 @@ window.addEventListener("DOMContentLoaded", ()=>{
 
 function displayMenusItem(sectionItem, menuItems) {
     let subMenu = sectionItem.map((item) => {
-        return `<a  href="#${item.category}">${item.title}</a>`;
-    });
+        const categoryId = item.category.replace(/[^a-zA-Z0-9-_]/g, '_');
     
+        return `<a  href="#${categoryId}">${item.title}</a>`;
+    });
+   
     subMenu = subMenu.join(" | ");
     let displayTitle = sectionItem.map((item) => {
         const filteredMenuItems = menuItems.filter((oneItem) => {
@@ -491,7 +502,7 @@ function displayMenusItem(sectionItem, menuItems) {
 });
         let displayMenusItem = filteredMenuItems.map((menuItem) => {
             return `      
-                <div class="col-sm-12 col-lg-4 col-md-6" >
+                <div class="col-sm-12 col-lg-4 col-md-6">
                     <div class="card-menu">
                         <img src=${menuItem.img} class="card-img-top">
                         <div class="card-body">
@@ -510,8 +521,8 @@ function displayMenusItem(sectionItem, menuItems) {
 
     displayTitle = displayTitle.join("");
     sectionCenter.innerHTML = `<nav class="d-inline">${subMenu}</nav><br>${displayTitle}`;
+    
 }
-
 /*function displaySubMenusItem(menuItem, subCategory){
     
     let name__article;
