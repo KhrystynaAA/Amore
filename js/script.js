@@ -484,7 +484,7 @@ function displayMenusItem(sectionItem, menuItems) {
 });
         let displayMenusItem = filteredMenuItems.map((menuItem) => {
             return `      
-                <div class="col-sm-12 col-lg-4 col-md-6" id="${item.category}">
+                <div class="col-sm-12 col-lg-4 col-md-6" >
                     <div class="card-menu">
                         <img src=${menuItem.img} class="card-img-top">
                         <div class="card-body">
@@ -498,7 +498,7 @@ function displayMenusItem(sectionItem, menuItems) {
                 </div>`;
         });
         displayMenusItem = displayMenusItem.join("");
-        return `<h2 class="recommended__title">${item.title}</h2>${displayMenusItem}<br>`;
+        return `<h2 class="recommended__title" id="${item.category}">${item.title}</h2>${displayMenusItem}<br>`;
     });
 
     displayTitle = displayTitle.join("");
