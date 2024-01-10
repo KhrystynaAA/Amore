@@ -721,6 +721,11 @@ function displayMenusItem(sectionItem, menuItems) {
     });
    
     subMenu = subMenu.join(" ");
+    
+    let subMenuContainer = document.createElement('div');
+    subMenuContainer.classList.add('sub-menu-container');
+    subMenuContainer.innerHTML = subMenu;
+	
     let displayTitle = sectionItem.map((item) => {
         const filteredMenuItems = menuItems.filter((oneItem) => {
             if(oneItem.categoryIndex==item.id){
@@ -747,7 +752,7 @@ function displayMenusItem(sectionItem, menuItems) {
     });
 
     displayTitle = displayTitle.join("");
-    sectionCenter.innerHTML = `<nav class="d-inline">${subMenu}</nav><br>${displayTitle}`;
+    sectionCenter.innerHTML = `<nav class="d-inline">${subMenuContainer.outerHTML}</nav><br>${displayTitle}`;
     
 }
 /*function displaySubMenusItem(menuItem, subCategory){
