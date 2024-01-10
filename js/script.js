@@ -4,7 +4,7 @@ btn__home.onclick=()=>{
     x.classList.remove("hide__menu");
     let y=document.getElementById('recommended');
         y.classList.remove("active");
-	let z=document.getElementById('backBtn');
+        let z=document.getElementById('backBtn');
     z.classList.remove("active");
 }
 backBtn.onclick=()=>{
@@ -51,6 +51,20 @@ filterBtns.forEach((btn)=>{
             //document.getElementById('recommended').scrollIntoView();
         })
 })
+liked__products.onclick=()=>{
+    let x=document.getElementById('recommended');
+    x.className += " active";
+    let y = document.getElementById('home__menu');
+    y.className += " hide__menu";
+    let z=document.getElementById('backBtn');
+    z.className +=" active";
+    const menuCategory = menu.filter((menuItem) => {
+        if(menuItem.selected){
+            return menuItem;
+        }});
+    displaySelectedItem(menuCategory);
+        
+}
 filterBtnsBaner.forEach((btn)=>{
     btn.addEventListener("click", (e)=>{
         let x=document.getElementById('burg__menu');
@@ -70,7 +84,8 @@ const menu = [
         description: "Салямі, шинка, курка, помідор, сир, яйце (може бути без) ",
         price: "Діаметр 22см - 80UAH <br> Діаметр 32см - 150UAH <br> Діаметр 50см - 260UAH",
         categoryIndex: 5,
-        img: "img/products/pizza/amore.jpg"
+        img: "img/products/pizza/amore.jpg",
+        selected: false
     },
     {
         id: 2,
@@ -80,7 +95,8 @@ const menu = [
         description: "Помідор, салямі, печериці, перець, кукурудза, сир",
         price: "Діаметр 22см - 80UAH <br> Діаметр 32см - 150UAH <br> Діаметр 50см - 260UAH",
         categoryIndex: 5,
-        img: "img/products/pizza/montana.jpg"
+        img: "img/products/pizza/montana.jpg",
+        selected: false
     },
     {
         id: 3,
@@ -90,7 +106,8 @@ const menu = [
         description: "Курка, печериці, кукурудза, перець, цибуля, сир",
         price: "Діаметр 22см - 80UAH <br> Діаметр 32см - 150UAH <br> Діаметр 50см - 260UAH",
         categoryIndex: 5,
-        img: "img/products/pizza/tachino.jpg"
+        img: "img/products/pizza/tachino.jpg",
+        selected: false
     },
     {
         id: 4,
@@ -352,7 +369,7 @@ const menu = [
         categoryIndex: 5,
         img: "img/products/pizza/case.jpg"
     },
-       {
+    {
         id: 45,
         title:"Філадельфія",
         Category: "roly",
@@ -483,6 +500,16 @@ const menu = [
         img: "img/products/sushi/white_dragon.jpg"
     },
     {
+        id: 70,
+        title:"Сирний з вугрем",
+        Category: "roly",
+        article: "Роли",
+        description: "Рис, норі, сир Філадельфія, огірок, вугор, сир Чедер, соус Унагі, кунжут",
+        price: "150UAH",
+        categoryIndex: 1,
+        img: "img/products/sushi/cheese_eel.jpg"
+    },
+    {
         id: 71,
         title:"Сирний з креветкою",
         Category: "roly",
@@ -562,7 +589,7 @@ const menu = [
         categoryIndex: 3,
         img: "img/products/sushi/set_cake.jpg"
     },
-{
+    {
         id: 120,
         title:"Орео Айс",
         Category: "drinks",
@@ -721,11 +748,9 @@ function displayMenusItem(sectionItem, menuItems) {
     });
    
     subMenu = subMenu.join(" ");
-    
     let subMenuContainer = document.createElement('div');
     subMenuContainer.classList.add('sub-menu-container');
     subMenuContainer.innerHTML = subMenu;
-	
     let displayTitle = sectionItem.map((item) => {
         const filteredMenuItems = menuItems.filter((oneItem) => {
             if(oneItem.categoryIndex==item.id){
@@ -743,6 +768,11 @@ function displayMenusItem(sectionItem, menuItems) {
                                 <p class="Category">${menuItem.description}</p>
                                 <p class="price">${menuItem.price}</p>
                             </p>
+                            <div class="d-flex justify-content-end align-items-center" id="select__btn">
+                            <button class="btn" onclick="toggleSelectionMenu(${menuItem.id})">
+                            <i class="${menuItem.selected ? 'fas' : 'far'} fa-heart fa-2x p-2"></i>
+                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>`;
@@ -755,6 +785,67 @@ function displayMenusItem(sectionItem, menuItems) {
     sectionCenter.innerHTML = `<nav class="d-inline">${subMenuContainer.outerHTML}</nav><br>${displayTitle}`;
     
 }
+function toggleSelectionMenu(itemId) {
+    
+    // Знайдіть об'єкт меню за ідентифікатором
+    const menuItem = menu.find(item => item.id === itemId);
+
+    // Змініть значення властивості selected
+    menuItem.selected = !menuItem.selected;
+    const menuSection = sections.find(item=>item.id === menuItem.categoryIndex);
+    const Category=menuSection.mainCategory;
+    const sectionCategory = sections.filter((sectionItem)=>Category.includes(sectionItem.mainCategory));
+    const sectionCategoryIndexes = sectionCategory.map(category => category.id);
+
+    const menuCategory = menu.filter(menuItem => sectionCategoryIndexes.includes(menuItem.categoryIndex));
+
+        
+        displayMenusItem(sectionCategory, menuCategory);
+       
+}
+function displaySelectedItem(menuItems){
+    let displayMenusItem = menuItems.map((menuItem) => {
+        return `      
+            <div class="col-sm-12 col-lg-4 col-md-12">
+                <div class="card">
+                    
+                   <div class=" d-flex justify-content-between">
+                    <div class="card-body flex-grow-1">
+                        <p class="card-text">
+                            <h3 class="title">${menuItem.title}</h3>
+                            <p class="Category">${menuItem.description}</p>
+                            <p class="price">${menuItem.price}</p>
+                        </p>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center p-2" style="max-width: 27%;"><img src=${menuItem.img} class="card-img-top"></div>
+                    </div>
+                    <div class="d-flex justify-content-end align-items-center" id="select__btn">
+                    <button class="btn" onclick="toggleSelection(${menuItem.id})">
+                    <i class="fas fa-heart fa-2x p-2"></i>
+                </button>
+            </div>
+                </div>
+                
+            </div>`;
+    });
+    displayMenusItem = displayMenusItem.join("");
+    sectionCenter.innerHTML = `<h2 class="recommended__title" style="margin-top:50px;">Обране</h2><br>${displayMenusItem}`;
+}
+function toggleSelection(itemId) {
+    
+    // Знайдіть об'єкт меню за ідентифікатором
+    const menuItem = menu.find(item => item.id === itemId);
+
+    // Змініть значення властивості selected
+    menuItem.selected = !menuItem.selected;
+    const menuCategory = menu.filter((menuItem) => {
+        if(menuItem.selected){
+            return menuItem;
+        }});
+    // Оновіть відображення обраного елемента
+    displaySelectedItem(menuCategory);
+}
+
 /*function displaySubMenusItem(menuItem, subCategory){
     
     let name__article;
