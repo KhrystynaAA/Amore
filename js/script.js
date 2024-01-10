@@ -717,9 +717,7 @@ window.addEventListener("DOMContentLoaded", ()=>{
 
 function displayMenusItem(sectionItem, menuItems) {
     let subMenu = sectionItem.map((item) => {
-        const categoryId = item.category.replace(/[^a-zA-Z0-9-_]/g, '_');
-    
-        return `<a  href="#${categoryId}">${item.title}</a>`;
+        return `<a  href="#${item.category}">${item.title}</a>`;
     });
    
     subMenu = subMenu.join(" | ");
