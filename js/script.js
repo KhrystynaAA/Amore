@@ -717,10 +717,10 @@ window.addEventListener("DOMContentLoaded", ()=>{
 
 function displayMenusItem(sectionItem, menuItems) {
     let subMenu = sectionItem.map((item) => {
-        return `<a  href="#${item.category}">${item.title}</a>`;
+        return `<a class="btn btn-coffee" href="#${item.category}">${item.title}</a>`;
     });
    
-    subMenu = subMenu.join(" | ");
+    subMenu = subMenu.join(" ");
     let displayTitle = sectionItem.map((item) => {
         const filteredMenuItems = menuItems.filter((oneItem) => {
             if(oneItem.categoryIndex==item.id){
