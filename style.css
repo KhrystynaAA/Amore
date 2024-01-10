@@ -442,3 +442,26 @@ border-radius: 50%;
   .btn-coffee.active {
     background: #D2691E; /* Світло-кавовий колір - коричневий */
   }
+.sub-menu-container {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: thin;
+    
+    scrollbar-color: #d7854a #FFEBCD; /* колір скролбару та фону */
+}
+
+.sub-menu-container::-webkit-scrollbar {
+    width: 0.5em;
+    height: 0.5em;
+}
+
+.sub-menu-container::-webkit-scrollbar-thumb {
+    background-color: #d7854a; /* колір скролбару */
+    border-radius: 6px; /* закруглені кути */
+    
+}
+
+.sub-menu-container::-webkit-scrollbar-track {
+    background-color: #FFEBCD; /* фон скролбару */
+}
