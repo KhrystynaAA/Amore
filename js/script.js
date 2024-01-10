@@ -46,16 +46,8 @@ function getCookie(name) {
     return null;
 }
 window.onload = function () {
-    // Отримати збережені обрані товари з куків
     const selectedItemsString = getCookie("selectedItems");
     const selectedItems = selectedItemsString ? JSON.parse(selectedItemsString) : [];
-
-    // Встановити відповідні значення selected у вашому menu
-    menu.forEach(item => {
-        item.selected = selectedItems.some(selectedItem => selectedItem.id === item.id);
-    });
-
-    // Оновити відображення обраних товарів
     displaySelectedItem(selectedItems);
 };
 
