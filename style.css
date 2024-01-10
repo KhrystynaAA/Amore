@@ -444,10 +444,10 @@ border-radius: 50%;
   }
 .sub-menu-container {
     display: flex;
+    justify-content: center;
     overflow-x: auto;
     white-space: nowrap;
     scrollbar-width: thin;
-    
     scrollbar-color: #d7854a #FFEBCD; /* колір скролбару та фону */
 }
 
