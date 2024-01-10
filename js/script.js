@@ -19,6 +19,46 @@ backBtn.onclick=()=>{
     document.body.scrollTop = 0; 
     document.documentElement.scrollTop = 0;
 }
+// Функція для встановлення кукі
+function setCookie(name, value, days) {
+    let expires = "";
+    if (days) {
+        const date = new Date();
+        date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
+        expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + (value || "") + expires + "; path=/";
+}
+
+// Функція для отримання значення кукі за ім'ям
+function getCookie(name) {
+    const nameEQ = name + "=";
+    const cookies = document.cookie.split(";");
+    for (let i = 0; i < cookies.length; i++) {
+        let cookie = cookies[i];
+        while (cookie.charAt(0) === " ") {
+            cookie = cookie.substring(1, cookie.length);
+        }
+        if (cookie.indexOf(nameEQ) === 0) {
+            return cookie.substring(nameEQ.length, cookie.length);
+        }
+    }
+    return null;
+}
+window.onload = function () {
+    // Отримати збережені обрані товари з куків
+    const selectedItemsString = getCookie("selectedItems");
+    const selectedItems = selectedItemsString ? JSON.parse(selectedItemsString) : [];
+
+    // Встановити відповідні значення selected у вашому menu
+    menu.forEach(item => {
+        item.selected = selectedItems.some(selectedItem => selectedItem.id === item.id);
+    });
+
+    // Оновити відображення обраних товарів
+    displaySelectedItem(selectedItems);
+};
+
 
 const sectionCenter = document.querySelector('.recommended');
 const filterBtns = document.querySelectorAll('.main__link');
@@ -798,9 +838,10 @@ function toggleSelectionMenu(itemId) {
     const sectionCategoryIndexes = sectionCategory.map(category => category.id);
 
     const menuCategory = menu.filter(menuItem => sectionCategoryIndexes.includes(menuItem.categoryIndex));
+    displayMenusItem(sectionCategory, menuCategory);
+    const selectedItems = menu.filter(item => item.selected).map(item => item.id);
+    setCookie('selectedItems', JSON.stringify(selectedItems), 7);
 
-        
-        displayMenusItem(sectionCategory, menuCategory);
        
 }
 function displaySelectedItem(menuItems){
@@ -838,12 +879,17 @@ function toggleSelection(itemId) {
 
     // Змініть значення властивості selected
     menuItem.selected = !menuItem.selected;
-    const menuCategory = menu.filter((menuItem) => {
+    const selectedItems = menu.filter(item => item.selected).map(item => item.id);
+    setCookie('selectedItems', JSON.stringify(selectedItems), 7);
+
+    // Оновіть відображення обраного елемента
+    displaySelectedItem(selectedItems);
+   /* const menuCategory = menu.filter((menuItem) => {
         if(menuItem.selected){
             return menuItem;
         }});
     // Оновіть відображення обраного елемента
-    displaySelectedItem(menuCategory);
+    displaySelectedItem(menuCategory);*/
 }
 
 /*function displaySubMenusItem(menuItem, subCategory){
