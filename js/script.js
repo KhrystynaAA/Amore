@@ -782,7 +782,7 @@ function displayMenusItem(sectionItem, menuItems) {
     });
 
     displayTitle = displayTitle.join("");
-    sectionCenter.innerHTML = `<nav class="d-inline">${subMenuContainer.outerHTML}</nav><br>${displayTitle}`;
+    sectionCenter.innerHTML = `<nav class="d-flex justify-content-center">${subMenuContainer.outerHTML}</nav><br>${displayTitle}`;
     
 }
 function toggleSelectionMenu(itemId) {
