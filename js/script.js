@@ -7,7 +7,7 @@ btn__home.onclick=()=>{
 	let z=document.getElementById('backBtn');
     z.classList.remove("active");
 }
-function goBack (){
+backBtn.onclick=()=>{
     let x =document.getElementById('home__menu');
     
     x.classList.remove("hide__menu");
