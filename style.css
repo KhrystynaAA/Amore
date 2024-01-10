@@ -470,4 +470,7 @@ border-radius: 50%;
       display: none; /* Приховати скролбар на екранах планшетів і телефонах */
   }
 }
+.fa-heart:hover {
+  color: #7d7d7e; 
+}
 
