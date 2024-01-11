@@ -94,6 +94,7 @@ const menu = [
         description: "Салямі, шинка, курка, помідор, сир, яйце (може бути без) ",
         price: "Діаметр 22см - 80UAH <br> Діаметр 32см - 150UAH <br> Діаметр 50см - 260UAH",
         categoryIndex: 5,
+        weight: "",
         img: "img/products/pizza/amore.jpg",
         selected: false
     },
@@ -105,6 +106,7 @@ const menu = [
         description: "Помідор, салямі, печериці, перець, кукурудза, сир",
         price: "Діаметр 22см - 80UAH <br> Діаметр 32см - 150UAH <br> Діаметр 50см - 260UAH",
         categoryIndex: 5,
+        weight: "",
         img: "img/products/pizza/montana.jpg",
         selected: false
     },
@@ -116,6 +118,7 @@ const menu = [
         description: "Курка, печериці, кукурудза, перець, цибуля, сир",
         price: "Діаметр 22см - 80UAH <br> Діаметр 32см - 150UAH <br> Діаметр 50см - 260UAH",
         categoryIndex: 5,
+        weight: "",
         img: "img/products/pizza/tachino.jpg",
         selected: false
     },
@@ -127,6 +130,7 @@ const menu = [
         description: "Шинка, печериці, болгарський перець, сир",
         price: "Діаметр 22см - 80UAH <br> Діаметр 32см - 150UAH <br> Діаметр 50см - 260UAH",
         categoryIndex: 5,
+        weight: "",
         img: "img/products/pizza/capricha.jpg"
     },
     {
@@ -137,6 +141,7 @@ const menu = [
         description: "Курка, креветки, болгарський перець, сир",
         price: "Діаметр 22см - 100UAH <br> Діаметр 32см - 200UAH <br> Діаметр 50см - 290UAH",
         categoryIndex: 5,
+        weight: "",
         img: "img/products/pizza/paza.jpg"
     },
     {
@@ -147,6 +152,7 @@ const menu = [
         description: "Моцарела, ементаль, горгонзола, пармезан, спеції",
         price: "Діаметр 22см - 100UAH <br> Діаметр 32см - 200UAH <br> Діаметр 50см - 290UAH",
         categoryIndex: 5,
+        weight: "",
         img: "img/products/pizza/fourCheese.jpg"
     },
     {
@@ -157,6 +163,7 @@ const menu = [
         description: "Курочка, моцарела, помідор, кукурудза",
         price: "Діаметр 22см - 80UAH <br> Діаметр 32см - 150UAH <br> Діаметр 50см - 260UAH",
         categoryIndex: 5,
+        weight: "",
         img: "img/products/pizza/polo.jpg"
     },
     {
@@ -167,6 +174,7 @@ const menu = [
         description: "Курка, ананас, болгарський перець, сир",
         price: "Діаметр 22см - 80UAH <br> Діаметр 32см - 150UAH <br> Діаметр 50см - 260UAH",
         categoryIndex: 5,
+        weight: "",
         img: "img/products/pizza/mexykanska.jpg"
     },
     {
@@ -177,6 +185,7 @@ const menu = [
         description: "Курка, печериці, помідор, цибуля, пекінська капуста, сир",
         price: "Діаметр 22см - 80UAH <br> Діаметр 32см - 150UAH <br> Діаметр 50см - 260UAH",
         categoryIndex: 5,
+        weight: "",
         img: "img/products/pizza/domashnia.jpg"
     },
     {
@@ -187,6 +196,7 @@ const menu = [
         description: "Сир, бекон, печериці, яйце, пармезан",
         price: "Діаметр 22см - 80UAH <br> Діаметр 32см - 150UAH <br> Діаметр 50см - 260UAH",
         categoryIndex: 5,
+        weight: "",
         img: "img/products/pizza/carbonara.jpg"
     },
     {
@@ -197,6 +207,7 @@ const menu = [
         description: "Салямі, сир",
         price: "Діаметр 22см - 80UAH <br> Діаметр 32см - 140UAH <br> Діаметр 50см - 260UAH",
         categoryIndex: 5,
+        weight: "",
         img: "img/products/pizza/saliami.jpg"
     },
     {
@@ -207,6 +218,7 @@ const menu = [
         description: "Філе лосося, перець, соус вершковий, сир",
         price: "Діаметр 22см - 100UAH <br> Діаметр 32см - 200UAH <br> Діаметр 50см - 280UAH",
         categoryIndex: 5,
+        weight: "",
         img: "img/products/pizza/majore.jpg"
     },
     {
@@ -217,6 +229,7 @@ const menu = [
         description: "Тунець, цибуля, болгарський перець, кукурудза, сир",
         price: "Діаметр 32см - 180UAH <br> Діаметр 50см - 270UAH",
         categoryIndex: 5,
+        weight: "",
         img: "img/products/pizza/tune.jpg"
     },
     {
@@ -227,6 +240,7 @@ const menu = [
         description: "Шинка, печериці, болгарський перець, цибуля, сир + сирний соус",
         price: "Діаметр 32см - 150UAH ",
         categoryIndex: 5,
+        weight: "",
         img: "img/products/pizza/liguriia.jpg"
     },
     {
@@ -237,6 +251,7 @@ const menu = [
         description: "Курка, шинка, печериці, болгарський перець, сир + пармезан",
         price: "Діаметр 22см - 80UAH <br> Діаметр 32см - 150UAH ",
         categoryIndex: 5,
+        weight: "",
         img: "img/products/pizza/calcone.jpg"
     },
     {
@@ -247,6 +262,7 @@ const menu = [
         description: "Морепродукти, лимон, перець, сир",
         price: "Діаметр 22см - 100UAH <br> Діаметр 32см - 180UAH <br> Діаметр 50см - 280UAH",
         categoryIndex: 5,
+        weight: "",
         img: "img/products/pizza/seaCocktail.jpg"
     },
     {
@@ -257,6 +273,7 @@ const menu = [
         description: "Вершкова основа, печериці, оливки, прошутто, помідор, сир, пармезан",
         price: "Діаметр 22см - 100UAH <br> Діаметр 32см - 200UAH <br> Діаметр 50см - 300UAH",
         categoryIndex: 5,
+        weight: "",
         img: "img/products/pizza/proshuto.jpg"
     },
     {
@@ -267,6 +284,7 @@ const menu = [
         description: "Чілі, салямі, оливки, помідор, сир",
         price: "Діаметр 22см - 100UAH <br> Діаметр 32см - 150UAH <br> Діаметр 50см - 260UAH",
         categoryIndex: 5,
+        weight: "",
         img: "img/products/pizza/podyhDragon.jpg"
     },
     {
@@ -277,6 +295,7 @@ const menu = [
         description: "Шинка, печериці, квашений огірок, цибуля, сир",
         price: "Діаметр 22см - 80UAH <br> Діаметр 32см - 150UAH <br> Діаметр 50см - 260UAH",
         categoryIndex: 5,
+        weight: "",
         img: "img/products/pizza/primavera.jpg"
     },
     {
@@ -287,6 +306,7 @@ const menu = [
         description: "Олія, печериці, часник, сир, пармезан",
         price: "Діаметр 22см - 80UAH <br> Діаметр 32см - 140UAH <br> Діаметр 50см - 260UAH",
         categoryIndex: 5,
+        weight: "",
         img: "img/products/pizza/mashroom.jpg"
     },
     {
@@ -297,6 +317,7 @@ const menu = [
         description: "Курка, шинка, болгарський перець, сир",
         price: "Діаметр 22см - 80UAH <br> Діаметр 32см - 150UAH <br> Діаметр 50см - 250UAH",
         categoryIndex: 5,
+        weight: "",
         img: "img/products/pizza/chicken.jpg"
     },
     {
@@ -307,6 +328,7 @@ const menu = [
         description: "Мисливські ковбаски, курка, в'ялені помідори, оливки зелені, сир",
         price: "Діаметр 22см - 100UAH <br> Діаметр 32см - 170UAH <br> Діаметр 50см - 280UAH",
         categoryIndex: 5,
+        weight: "",
         img: "img/products/pizza/salsa.jpg"
     },
     {
@@ -317,6 +339,7 @@ const menu = [
         description: "Курка, салямі, помідор, сир",
         price: "Діаметр 22см - 80UAH <br> Діаметр 32см - 150UAH <br> Діаметр 50см - 260UAH",
         categoryIndex: 5,
+        weight: "",
         img: "img/products/pizza/polermo.jpg"
     },
     {
@@ -327,6 +350,7 @@ const menu = [
         description: "Шинка, курка, салямі, бочок, мисливська ковбаска, часник, помідор, сир",
         price: "Діаметр 22см - 100UAH <br> Діаметр 32см - 180UAH <br> Діаметр 50см - 280UAH",
         categoryIndex: 5,
+        weight: "",
         img: "img/products/pizza/meat.jpg"
     },
     {
@@ -337,6 +361,7 @@ const menu = [
         description: "Грибна/Салямі/Капріча/Домашня",
         price: "Діаметр 50см - 270UAH",
         categoryIndex: 5,
+        weight: "",
         img: "img/products/pizza/asorti.jpg"
     },
     {
@@ -347,6 +372,7 @@ const menu = [
         description: "Соус, подвійний сир",
         price: "Діаметр 22см - 70UAH <br> Діаметр 32см - 130UAH",
         categoryIndex: 5,
+        weight: "",
         img: "img/products/pizza/margaryta.jpg"
     },
     {
@@ -357,6 +383,7 @@ const menu = [
         description: "Вершковий соус, курка, печериці, дор Блю, моцарела, кукурудза, помідор",
         price: "Діаметр 22см - 100UAH <br> Діаметр 32см - 180UAH <br> Діаметр 50см - 280UAH",
         categoryIndex: 5,
+        weight: "",
         img: "img/products/pizza/bianka.jpg"
     },
     {
@@ -367,6 +394,7 @@ const menu = [
         description: "Вершковий соус, мисливська ковбаска, часник, печериці, моцарела, квашений огірок",
         price: "Діаметр 22см - 100UAH <br> Діаметр 32см - 160UAH <br> Діаметр 50см - 260UAH",
         categoryIndex: 5,
+        weight: "",
         img: "img/products/pizza/myslyvska.jpg"
     },
     {
@@ -377,157 +405,533 @@ const menu = [
         description:"",
         price: "Діаметр 22см - 10UAH <br> Діаметр 32см - 15UAH",
         categoryIndex: 5,
+        weight: "",
         img: "img/products/pizza/case.jpg"
     },
     {
+        id: 30,
+        title:"Паляниця",
+        Category: "pizza",
+        article: "Склади свою піцу",
+        description:"",
+        price: "",
+        weight: "",
+        categoryIndex: 6
+    },
+    {
+        id: 31,
+        title:"Соус помідорний",
+        Category: "pizza",
+        article: "Склади свою піцу",
+        description:"",
+        price: "20/35UAH",
+        categoryIndex: 6,
+        weight: "",
+    },
+    {
+        id: 32,
+        title:"Соус вершковий",
+        Category: "pizza",
+        article: "Склади свою піцу",
+        description:"",
+        price: "30/45UAH",
+        categoryIndex: 6,
+        weight: "",
+    },
+    {
+        id: 33,
+        title:"Шинка",
+        Category: "pizza",
+        article: "Склади свою піцу",
+        description:"",
+        price: "40UAH",
+        categoryIndex: 6,
+        weight: "50 грам",
+    },
+    {
+        id: 34,
+        title:"Куряче м'ясо",
+        Category: "pizza",
+        article: "Склади свою піцу",
+        description:"",
+        price: "40UAH",
+        categoryIndex: 6,
+        weight: "50 грам",
+    },
+    {
+        id: 35,
+        title:"Мисливська ковбаса",
+        Category: "pizza",
+        article: "Склади свою піцу",
+        description:"",
+        price: "40UAH",
+        categoryIndex: 6,
+        weight: "50 грам",
+    },
+    {
+        id: 36,
+        title:"Бочок",
+        Category: "pizza",
+        article: "Склади свою піцу",
+        description:"",
+        price: "40UAH",
+        categoryIndex: 6,
+        weight: "50 грам",
+    },
+    {
+        id: 37,
+        title:"Салямі",
+        Category: "pizza",
+        article: "Склади свою піцу",
+        description:"",
+        price: "40UAH",
+        categoryIndex: 6,
+        weight: "50 грам",
+    },
+    {
+        id: 38,
+        title:"Креветки",
+        Category: "pizza",
+        article: "Склади свою піцу",
+        description:"",
+        price: "60UAH",
+        categoryIndex: 6,
+        weight: "40 грам",
+    },
+    {
+        id: 39,
+        title:"Сир",
+        Category: "pizza",
+        article: "Склади свою піцу",
+        description:"",
+        price: "45UAH",
+        categoryIndex: 6,
+        weight: "100 грам",
+    },
+    {
+        id: 40,
+        title:"Оливки",
+        Category: "pizza",
+        article: "Склади свою піцу",
+        description:"",
+        price: "15UAH",
+        categoryIndex: 6,
+        weight: "20 грам",
+    },
+    {
+        id: 41,
+        title:"Перець",
+        Category: "pizza",
+        article: "Склади свою піцу",
+        description:"",
+        price: "10UAH",
+        categoryIndex: 6,
+        weight: "20 грам",
+    },
+    {
+        id: 42,
+        title:"Помідори",
+        Category: "pizza",
+        article: "Склади свою піцу",
+        description:"",
+        price: "15UAH",
+        categoryIndex: 6,
+        weight: "50 грам",
+    },
+    {
+        id: 43,
+        title:"Кукурудза",
+        Category: "pizza",
+        article: "Склади свою піцу",
+        description:"",
+        price: "8UAH",
+        categoryIndex: 6,
+        weight: "30 грам",
+    },
+    {
+        id: 44,
+        title:"Цибуля",
+        Category: "pizza",
+        article: "Склади свою піцу",
+        description:"",
+        price: "3UAH",
+        categoryIndex: 6,
+        weight: "30 грам",
+    },
+    {
         id: 45,
+        title:"Тунець",
+        Category: "pizza",
+        article: "Склади свою піцу",
+        description:"",
+        price: "60UAH",
+        categoryIndex: 6,
+        weight: "80 грам",
+    },
+    {
+        id: 46,
+        title:"Сир пармезан",
+        Category: "pizza",
+        article: "Склади свою піцу",
+        description:"",
+        price: "25UAH",
+        categoryIndex: 6,
+        weight: "30 грам",
+    },
+    {
+        id: 47,
+        title:"Ананас",
+        Category: "pizza",
+        article: "Склади свою піцу",
+        description:"",
+        price: "20UAH",
+        categoryIndex: 6,
+        weight: "50 грам",
+    },
+    {
+        id:  48,
+        title:"Печериці",
+        Category: "pizza",
+        article: "Склади свою піцу",
+        description:"",
+        price: "10UAH",
+        categoryIndex: 6,
+        weight: "30 грам",
+    },
+    {
+        id: 49,
+        title:"Часник",
+        Category: "pizza",
+        article: "Склади свою піцу",
+        description:"",
+        price: "5UAH",
+        categoryIndex: 6,
+        weight: "10 грам",
+    },
+    {
+        id: 50,
         title:"Філадельфія",
         Category: "roly",
         article: "Роли",
         description: "Рис, норі, лосось, авокадо, огірок, сир Філадельфія",
         price: "150UAH",
         categoryIndex: 1,
+        weight: "260г",
         img: ""
     },
     {
-        id: 46,
+        id: 51,
         title:"Філадельфія з креветкою",
         Category: "roly",
         article: "Роли",
         description: "Рис, норі, лосось, сир Філадельфія, креветки",
         price: "170UAH",
         categoryIndex: 1,
+        weight: "250г",
         img: "img/products/sushi/filadelfia_shrimp.jpg"
     },
     {
-        id: 47,
+        id: 52,
         title:"Black Філадельфія",
         Category: "roly",
         article: "Роли",
         description: "Рис, норі, лосось, сир Філадельфія, огірок, ікра Масаго",
         price: "160UAH",
         categoryIndex: 1,
+        weight: "270г",
         img: ""
     },
     {
-        id: 48,
+        id: 53,
         title:"Філадельфія вега",
         Category: "roly",
         article: "Роли",
         description: "Рис, норі, сир Філадельфія, огірок, авокадо, кунжут, соус Унагі",
         price: "120UAH",
         categoryIndex: 1,
+        weight: "250г",
         img: ""
     },
     {
-        id: 49,
+        id: 54,
         title:"Філадельфія з Вугрем",
         Category: "roly",
         article: "Роли",
         description: "Рис, норі, сир Філадельфія, огірок, вугор, авокадо, кунжут",
         price: "150UAH",
         categoryIndex: 1,
+        weight: "240г",
         img: "img/products/sushi/filadelfia_eel.jpg"
     },
     {
-        id: 50,
+        id: 55,
         title:"Філадельфія Масаго",
         Category: "roly",
         article: "Роли",
         description: "Рис, норі, лосось, сир Філадельфія, огірок, ікра Масаго",
         price: "140UAH",
         categoryIndex: 1,
+        weight: "220г",
         img: "img/products/sushi/filadelfia_masaho.jpg"
     },
     {
-        id: 51,
+        id: 56,
         title:"Каліфорнія",
         Category: "roly",
         article: "Роли",
         description: "Рис, норі, сир Філадельфія, огірок, авокадо, креветки, ікра Масаго",
         price: "150UAH",
         categoryIndex: 1,
+        weight: "240г",
         img: "img/products/sushi/californiia.jpg"
     },
     {
-        id: 52,
+        id: 57,
         title:"Каліфорнія з Вугрем",
         Category: "roly",
         article: "Роли",
         description: "Рис, норі, сир Філадельфія, огірок, авокадо, вугор, креветки, ікра Масаго",
         price: "150UAH",
         categoryIndex: 1,
+        weight: "220г",
         img: "img/products/sushi/californiia_eel.jpg"
     },
     {
-        id: 53,
+        id: 58,
         title:"Каліфорнія Домінікана",
         Category: "roly",
         article: "Роли",
         description: "Рис, норі, сир Філадельфія, огірок, авокадо, креветки, ікра Масаго",
         price: "150UAH",
         categoryIndex: 1,
+        weight: "240г",
         img: "img/products/sushi/californiia_dominikana.jpg"
     },
     {
-        id: 54,
+        id: 59,
         title:"Рожевий Фламінго",
         Category: "roly",
         article: "Роли",
         description: "Рис, норі, сир Філадельфія, огірок, мідії",
         price: "130UAH",
         categoryIndex: 1,
+        weight: "180г",
         img: "img/products/sushi/pink_flamingo.jpg"
     },
     {
-        id: 55,
+        id: 60,
         title:"Зелений дракон з вугрем",
         Category: "roly",
         article: "Роли",
         description: "Рис, норі, сир Філадельфія, вугор, авокадо, соус Унагі, кунжут",
         price: "170UAH",
         categoryIndex: 1,
+        weight: "250г",
         img: "img/products/sushi/green_dragon.jpg"
     },
     {
-        id: 56,
+        id: 61,
         title:"Зелений дракон з креветкою",
         Category: "roly",
         article: "Роли",
         description: "Рис, норі, сир Філадельфія, огірок, авокадо, креветки, соус Унагі, кунжут",
         price: "170UAH",
         categoryIndex: 1,
+        weight: "260г",
         img: "img/products/sushi/green_dragon_shrimp.jpg"
     },
     {
-        id: 58,
+        id: 62,
         title:"Білий дракон",
         Category: "roly",
         article: "Роли",
         description: "Рис, норі, сир Філадельфія, лосось, тостерний сир, кунжут",
         price: "150UAH",
         categoryIndex: 1,
+        weight: "260г",
         img: "img/products/sushi/white_dragon.jpg"
     },
     {
-        id: 70,
+        id: 63,
+        title:"Червоний дракон",
+        Category: "roly",
+        article: "Роли",
+        description: "Рис, норі, сир Філадельфія, лосось, огірок, ікра Масаго",
+        price: "160UAH",
+        categoryIndex: 1,
+        weight: "250г",
+    },
+    {
+        id: 64,
+        title:"Чорний дракон",
+        Category: "roly",
+        article: "Роли",
+        description: "Рис, норі, сир Філадельфія, огірок, креветки, кунжут",
+        price: "150UAH",
+        categoryIndex: 1,
+        weight: "230г",
+    },
+    {
+        id: 65,
+        title:"Рол сирний",
+        Category: "roly",
+        article: "Роли",
+        description: "Рис, норі, сир Філадельфія, сир Чеддер, кунжут",
+        price: "110UAH",
+        categoryIndex: 1,
+        weight: "260г",
+    },
+    {
+        id: 66,
         title:"Сирний з вугрем",
         Category: "roly",
         article: "Роли",
         description: "Рис, норі, сир Філадельфія, огірок, вугор, сир Чедер, соус Унагі, кунжут",
         price: "150UAH",
         categoryIndex: 1,
+        weight: "260г",
         img: "img/products/sushi/cheese_eel.jpg"
     },
     {
-        id: 71,
+        id: 67,
         title:"Сирний з креветкою",
         Category: "roly",
         article: "Роли",
         description: "Рис, норі, огірок, креветки, сир Філадельфія, тостерний сир, пармезан, соус Унагі",
         price: "150UAH",
         categoryIndex: 1,
+        weight: "260г",
         img: "img/products/sushi/cheese_shrimp.jpg"
+    },
+    {
+        id: 68,
+        title:"Боніто",
+        Category: "roly",
+        article: "Роли",
+        description: "Рис, норі, сир Філадельфія, лосось, груша, кунжут",
+        price: "130UAH",
+        categoryIndex: 1,
+        weight: "240г",
+    },
+    {
+        id: 69,
+        title:"Футумакі",
+        Category: "roly",
+        article: "Роли",
+        description: "Рис, норі, огірок, лосось, ікра зелена, чорна, червона, оранжева",
+        price: "130UAH",
+        categoryIndex: 1,
+        weight: "220г",
+    },
+    {
+        id: 70,
+        title:"Футумакі з крабом сурімі",
+        Category: "roly",
+        article: "Роли",
+        description: "Рис, норі, сир Філадельфія, огірок, салат, сурімі, соус Унагі, кунжут",
+        price: "120UAH",
+        categoryIndex: 1,
+        weight: "240г",
+    },
+    {
+        id: 71,
+        title:"Футумакі з куркою",
+        Category: "roly",
+        article: "Роли",
+        description: "Рис, норі, сир Філадельфія, огірок, салат, куряче філе, соус Унагі, кунжут",
+        price: "120UAH",
+        categoryIndex: 1,
+        weight: "250г",
+    },
+    {
+        id: 72,
+        title:"Мон рол",
+        Category: "roly",
+        article: "Роли",
+        description: "Рис, норі, сир Філадельфія, огірок, лосось, авокадо, кунжут",
+        price: "130UAH",
+        categoryIndex: 1,
+        weight: "200г",
+    },
+    {
+        id: 73,
+        title:"Городина кунжут",
+        Category: "roly",
+        article: "Роли",
+        description: "Рис, норі, сир Філадельфія, огірок, авокадо, кунжут, салат",
+        price: "70UAH",
+        categoryIndex: 1,
+        weight: "190г",
+    },
+    {
+        id: 74,
+        title:"Сурімі в кунжуті",
+        Category: "roly",
+        article: "Роли",
+        description: "Рис, норі, сир Філадельфія, огірок, Сурімі, кунжут",
+        price: "100UAH",
+        categoryIndex: 1,
+        weight: "210г",
+    },
+    {
+        id: 75,
+        title:"Рол Чікен",
+        Category: "roly",
+        article: "Роли",
+        description: "Рис, норі, сир Філадельфія, курка, огірок, салат, ікра Масаго",
+        price: "130UAH",
+        categoryIndex: 1,
+        weight: "230г",
+    },
+    {
+        id: 76,
+        title:"Норі макі",
+        Category: "roly",
+        article: "Роли",
+        description: "Рис, норі, лосось",
+        price: "80UAH",
+        categoryIndex: 1,
+        weight: "150г",
+    },
+    {
+        id: 77,
+        title:"Макі з огірком",
+        Category: "roly",
+        article: "Роли",
+        description: "Рис, норі, огірок, кунжут",
+        price: "55UAH",
+        categoryIndex: 1,
+        weight: "180г",
+    },
+    {
+        id: 78,
+        title:"Макі з Вугрем",
+        Category: "roly",
+        article: "Роли",
+        description: "Рис, норі, сир Філадельфія, вугор, соус Унагі",
+        price: "80UAH",
+        categoryIndex: 1,
+        weight: "170г",
+    },
+    {
+        id: 79,
+        title:"Макі з тигровими креветками",
+        Category: "roly",
+        article: "Роли",
+        description: "Рис, норі, сир Філадельфія, тигрові креветки",
+        price: "80UAH",
+        categoryIndex: 1,
+        weight: "190г",
+    },
+    {
+        id: 80,
+        title:"Макі з Сурімі",
+        Category: "roly",
+        article: "Роли",
+        description: "Рис, норі, сир Філадельфія, огірок, Сурімі",
+        price: "60UAH",
+        categoryIndex: 1,
+        weight: "200г",
     },
     {
         id: 81,
@@ -537,6 +941,7 @@ const menu = [
         description: "Рис, сир Філадельфія, огірок, авокадо, лосось, соус Унагі, соус для запікання, кунжут",
         price: "150UAH",
         categoryIndex: 2,
+        weight: "350г",
         img: "img/products/sushi/warm_role_salmon.jpg"
     },
     {
@@ -547,6 +952,7 @@ const menu = [
         description: "Рис, сир Філадельфія, огірок, копчена курка, салата, соус Унагі, соус для запікання, кунжут",
         price: "150UAH",
         categoryIndex: 2,
+        weight: "300г",
         img: "img/products/sushi/warm_role_chicken.jpg"
     },
     {
@@ -557,6 +963,7 @@ const menu = [
         description: "Рис, сир Філадельфія, огірок, креветки, соус для запікання",
         price: "150UAH",
         categoryIndex: 2,
+        weight: "350г",
         img: "img/products/sushi/warm_role_shrimp.jpg"
     },
     {
@@ -567,6 +974,7 @@ const menu = [
         description: "Рис, сир Філадельфія, огірок, зелена цибуля, мідії, соус для запікання",
         price: "110UAH",
         categoryIndex: 2,
+        weight: "300г",
         img: "img/products/sushi/warm_role_mussel.jpg"
     },
     {
@@ -577,6 +985,7 @@ const menu = [
         description: "Рол Філадельфія/Філадельфія з креветками/Каліфорнія/Чікен/Боніто/Сирний/Норі макі/Макі Сурімі/Городина кунжут/Макі з огірком",
         price: "600UAH",
         categoryIndex: 3,
+        weight: "1.2кг (40 шматків)",
         img: "img/products/sushi/set_asorti.jpg"
     },
     {
@@ -587,6 +996,7 @@ const menu = [
         description: "Філадельфія з лососем/Філадельфія з креветкою/Філадельфія вега/Філадельфія масаго",
         price: "550UAH",
         categoryIndex: 3,
+        weight: "980г (32 шматки)",
         img: "img/products/sushi/set_filadelfiia.jpg"
     },
     {
@@ -597,17 +1007,339 @@ const menu = [
         description: "Рол Філадельфія/рол Філадельфія з вугрем у кунжуті/рол Боніто/рол Каліфорнія/рол Норі макі",
         price: "630UAH",
         categoryIndex: 3,
+        weight: "1.18кг (40 шматків)",
         img: "img/products/sushi/set_cake.jpg"
     },
     {
+        id: 88,
+        title:"Сет міні Мікс",
+        Category: "roly",
+        article: "Сети",
+        description: "Рол Філадельфія/рол Філадельфія з вугрем/Філадельфія Масаго/Мон рол/Білий дракон/рол Боніто",
+        price: "450UAH",
+        categoryIndex: 3,
+        weight: "720г (24 шматки)",
+    },
+    {
+        id: 89,
+        title:'Сет "Гарячий"',
+        Category: "roly",
+        article: "Сети",
+        description: 'Запечений з лососем/Запечений з креветкою/Запечений "Цезар"',
+        price: "400UAH",
+        categoryIndex: 3,
+        weight: "1.1кг (24 шматки)",
+    },
+    {
+        id: 90,
+        title:"Сет Мікс",
+        Category: "roly",
+        article: "Сети",
+        description: "Рол Філадельфія/рол Городина кунжут/рол Рожевий Фламінго/рол Боніто",
+        price: "470UAH",
+        categoryIndex: 3,
+        weight: "900г (32 шматки)",
+    },
+    {
+        id: 91,
+        title:"Сет Асорті Лайт",
+        Category: "roly",
+        article: "Сети",
+        description: "Рол Чікен/рол Сурімі в кунжуті/рол Макі з огірком",
+        price: "270UAH",
+        categoryIndex: 3,
+        weight: "640г (24 шматки)",
+    },
+    {
+        id: 92,
+        title:"Сет Фіш макі",
+        Category: "roly",
+        article: "Сети",
+        description: "Макі з лососем/Макі з вугрем/Макі з тигровою креветкою/Макі з мідіями",
+        price: "320UAH",
+        categoryIndex: 3,
+        weight: "710г (32 шматки)",
+    },
+    {
+        id: 93,
+        title:"Сет Футомакі",
+        Category: "roly",
+        article: "Сети",
+        description: "Футумакі з лососем/Футумакі з куркою/Футумакі з крабом",
+        price: "360UAH",
+        categoryIndex: 3,
+        weight: "710г (24 шматки)",
+    },
+    {
+        id: 94,
+        title:"Сет з Лососем",
+        Category: "roly",
+        article: "Сети",
+        description: "Рол Філадельфія з лососем/рол Каліфорнія з лососем/рол Фотумакі з лососем",
+        price: "420UAH",
+        categoryIndex: 3,
+        weight: "730г (24 шматки)",
+    },
+    {
+        id: 95,
+        title:"Сет 4 Дракони",
+        Category: "roly",
+        article: "Сети",
+        description: "Рол Зелений дракон/рол Білий дракон/рол Червоний дракон/рол Чорний дракон",
+        price: "600UAH",
+        categoryIndex: 3,
+        weight: "1кг (32 шматки)",
+    },
+    {
+        id: 96,
+        title:"Чотири сири з грушею",
+        Category: "roly",
+        article: "Роли",
+        description: "Рис, норі, груша, сир Філадельфія, горгонзола, тостерний сир, пармезан, соус Унагі",
+        price: "130UAH",
+        categoryIndex: 1,
+        weight: "260г",
+    },
+    {
+        id: 98,
+        title:"Сирний з мідією",
+        Category: "roly",
+        article: "Роли",
+        description: "Рис, норі, мідія, сир Філадельфія, тостерний сир, пармезан, соус Унагі",
+        price: "120UAH",
+        categoryIndex: 1,
+        weight: "260г",
+    },
+    {
+        id: 99,
+        title:"Філадельфія з лососем в кунжуті",
+        Category: "roly",
+        article: "Роли",
+        description: "Рис, чорнило каракатиці, норі, огірок, сир Філадельфія, лосось, кунжут",
+        price: "150UAH",
+        categoryIndex: 1,
+        weight: "250г",
+    },
+    {
+        id: 100,
+        title:"Рол Орігамі",
+        Category: "roly",
+        article: "Роли",
+        description: "Рис, соєвий папір, лосось, сир Філадельфія, огірок, ікра масаго, авокадо",
+        price: "200UAH",
+        categoryIndex: 1,
+        weight: "250г",
+    },
+    {
+        id: 101,
+        title:"Спрінг рол з лососем",
+        Category: "roly",
+        article: "Спрінг роли",
+        description: "Рисовий папір, лосось, сир Філадельфія, зелень, огірок, ікра тобіко, соус Теріякі",
+        price: "150UAH",
+        categoryIndex: 4,
+        weight: "120г",
+    },
+    {
+        id: 102,
+        title:"Спрінг рол з креветкою",
+        Category: "roly",
+        article: "Спрінг роли",
+        description: "Рисовий папір, креветка, сир Філадельфія, зелень, огірок, ікра тобіко, соус Теріякі",
+        price: "150UAH",
+        categoryIndex: 4,
+        weight: "120г",
+    },
+    {
+        id: 103,
+        title:"Спрінг рол з куркою",
+        Category: "roly",
+        article: "Спрінг роли",
+        description: "Рисовий папір, перець, курка, сир Філадельфія, зелень, огірок, кунжут, соус Теріякі",
+        price: "130UAH",
+        categoryIndex: 4,
+        weight: "120г",
+    },
+    {
         id: 120,
+        title:'Чай фруктовий <p class="small">(на 1 персону)</p>',
+        Category: "drinks",
+        article: "Гарячі напої",
+        description: 'Подається з апельсином або лимоном',
+        price: "30UAH",
+        categoryIndex: 8,
+        weight: "300 мл",
+    },
+    {
+        id: 121,
+        title:"Чай листковий <p class='small'>(на 2 персони)</p>",
+        Category: "drinks",
+        article: "Гарячі напої",
+        description: 'Чорний/зелений/каркаде',
+        price: "30UAH",
+        categoryIndex: 8,
+        weight: "400 мл",
+    },
+    {
+        id: 122,
+        title:"Кава еспресо",
+        Category: "drinks",
+        article: "Гарячі напої",
+        description: '',
+        price: "30UAH",
+        categoryIndex: 8,
+        weight: "50 мл",
+    },
+    {
+        id: 123,
+        title:"Кава американо",
+        Category: "drinks",
+        article: "Гарячі напої",
+        description: '',
+        price: "30UAH",
+        categoryIndex: 8,
+        weight: "120 мл",
+    },
+    {
+        id: 124,
+        title:"Кава Флет Вайт",
+        Category: "drinks",
+        article: "Гарячі напої",
+        description: '',
+        price: "45UAH",
+        categoryIndex: 8,
+        weight: "200 мл",
+    },
+    {
+        id: 125,
+        title:"Капучино натуральне",
+        Category: "drinks",
+        article: "Гарячі напої",
+        description: 'Кава, молоко, сироп за бажанням',
+        price: "35UAH",
+        categoryIndex: 8,
+        weight: "180 мл",
+    },
+    {
+        id: 126,
+        title:"Лате",
+        Category: "drinks",
+        article: "Гарячі напої",
+        description: '',
+        price: "40UAH",
+        categoryIndex: 8,
+        weight: "300 мл",
+    },
+    {
+        id: 127,
+        title:"Лате <p class='text-danger'>XXL</p>",
+        Category: "drinks",
+        article: "Гарячі напої",
+        description: 'Подвійне еспресо, молоко',
+        price: "50UAH",
+        categoryIndex: 8,
+        weight: "400 мл",
+    },
+    {
+        id: 128,
+        title:"Кокосове Лате",
+        Category: "drinks",
+        article: "Гарячі напої",
+        description: 'Еспресо, кокосове молоко',
+        price: "50UAH",
+        categoryIndex: 8,
+        weight: "200 мл",
+    },
+    {
+        id: 129,
+        title:"Снікерс Лате",
+        Category: "drinks",
+        article: "Гарячі напої",
+        description: 'Еспресо, снікерс, молоко',
+        price: "50UAH",
+        categoryIndex: 8,
+        weight: "250 мл",
+    },
+    {
+        id: 130,
         title:"Орео Айс",
         Category: "drinks",
         article: "Гарячі напої",
         description: 'Еспресо, молоко, морозиво, печиво "Орео", аерозольні вершки',
         price: "50UAH",
         categoryIndex: 8,
+        weight: "350 мл",
         img: "img/products/drinks/oreo_ice.jpg"
+    },
+    {
+        id: 131,
+        title:"Глясе",
+        Category: "drinks",
+        article: "Гарячі напої",
+        description: 'Кава еспресо, морозиво',
+        price: "50UAH",
+        categoryIndex: 8,
+        weight: "200 мл",
+    },
+    {
+        id: 132,
+        title:"Капучино <p class='text-danger'>Lafesta</p>",
+        Category: "drinks",
+        article: "Гарячі напої",
+        description: '',
+        price: "25UAH",
+        categoryIndex: 8,
+        weight: "120 мл",
+    },
+    {
+        id: 133,
+        title:"Гарячий шоколад <p class='text-danger'>Lafesta</p>",
+        Category: "drinks",
+        article: "Гарячі напої",
+        description: '',
+        price: "25UAH",
+        categoryIndex: 8,
+        weight: "120 мл",
+    },
+    {
+        id: 134,
+        title:"Какар з вершками та маршмелоу",
+        Category: "drinks",
+        article: "Гарячі напої",
+        description: '',
+        price: "40UAH",
+        categoryIndex: 8,
+        weight: "200 мл",
+    },
+    {
+        id: 135,
+        title:"Вершки до кави",
+        Category: "drinks",
+        article: "Гарячі напої",
+        description: '',
+        price: "5UAH",
+        categoryIndex: 8,
+        weight: "10 мл",
+    },
+    {
+        id: 136,
+        title:"Лимон",
+        Category: "drinks",
+        article: "Гарячі напої",
+        description: '',
+        price: "5UAH/20UAH",
+        categoryIndex: 8,
+        weight: "5г/50г",
+    },
+    {
+        id: 137,
+        title:"Сироп",
+        Category: "drinks",
+        article: "Гарячі напої",
+        description: '',
+        price: "5UAH",
+        categoryIndex: 8,
+        weight: "",
     },
     {
         id: 140,
@@ -617,6 +1349,7 @@ const menu = [
         description: 'Джин, н/с шампанське, спрайт, сироп полуничний, солодка вата',
         price: "110UAH",
         categoryIndex: 12,
+        weight: "250 мл",
         img: "img/products/drinks/enjoy.jpg"
     },
     {
@@ -627,8 +1360,10 @@ const menu = [
         description: 'Джин, н/с шампанське, спрайт, сироп Лаванда та чорниця, лід',
         price: "110UAH",
         categoryIndex: 12,
+        weight: "300 мл",
         img: "img/products/drinks/violet_aperol.jpg"
     },
+    
 ]
 const sections =[
     {
@@ -771,10 +1506,11 @@ function displayMenusItem(sectionItem, menuItems) {
             return `      
                 <div class="col-sm-12 col-lg-4 col-md-6">
                     <div class="card-menu">
-                        <img src=${menuItem.img} class="card-img-top">
+                        <img src=${menuItem.img ? menuItem.img : "img/icons/logoTab.png"} class="${menuItem.img ? '' : 'card-img-logo'} mx-auto d-block card-img-top">
                         <div class="card-body">
                             <p class="card-text">
-                                <h3 class="title">${menuItem.title}</h3>
+                                <p class="display-6">${menuItem.title}</p>
+                                <p class="small text-muted "><em>${menuItem.weight}</em></p>
                                 <p class="Category">${menuItem.description}</p>
                                 <p class="price">${menuItem.price}</p>
                             </p>
@@ -823,12 +1559,13 @@ function displaySelectedItem(menuItems){
                    <div class=" d-flex justify-content-between">
                     <div class="card-body flex-grow-1">
                         <p class="card-text">
-                            <h3 class="title">${menuItem.title}</h3>
+                            <p class="display-6">${menuItem.title}</p>
+                            <p class="small text-muted"><em>${menuItem.weight}</em></p>
                             <p class="Category">${menuItem.description}</p>
                             <p class="price">${menuItem.price}</p>
                         </p>
                     </div>
-                    <div class="d-flex justify-content-center align-items-center p-2" style="max-width: 27%;"><img src=${menuItem.img} class="card-img-top"></div>
+                    <div class="d-flex justify-content-center align-items-center p-2" style="max-width: 27%;"><img src=${menuItem.img ? menuItem.img : "img/icons/logoTab.png"} class="card-img-top"></div>
                     </div>
                     <div class="d-flex justify-content-end align-items-center" id="select__btn">
                     <button class="btn" onclick="toggleSelection(${menuItem.id})">
