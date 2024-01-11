@@ -19,7 +19,16 @@ backBtn.onclick=()=>{
     document.body.scrollTop = 0; 
     document.documentElement.scrollTop = 0;
 }
-
+// Зберегти обрані товари в Session Storage
+function saveSelectedItemsToSessionStorage(selectedItems) {
+    sessionStorage.setItem('selectedItems', JSON.stringify(selectedItems));
+  }
+  
+  // Отримати обрані товари з Session Storage
+  function getSelectedItemsFromSessionStorage() {
+    const selectedItemsString = sessionStorage.getItem('selectedItems');
+    return selectedItemsString ? JSON.parse(selectedItemsString) : [];
+  }
 
 const sectionCenter = document.querySelector('.recommended');
 const filterBtns = document.querySelectorAll('.main__link');
@@ -790,9 +799,11 @@ function toggleSelectionMenu(itemId) {
     
     // Знайдіть об'єкт меню за ідентифікатором
     const menuItem = menu.find(item => item.id === itemId);
-
     // Змініть значення властивості selected
     menuItem.selected = !menuItem.selected;
+    
+const selectedItems = menu.filter(item => item.selected);
+saveSelectedItemsToSessionStorage(selectedItems);
     const menuSection = sections.find(item=>item.id === menuItem.categoryIndex);
     const Category=menuSection.mainCategory;
     const sectionCategory = sections.filter((sectionItem)=>Category.includes(sectionItem.mainCategory));
@@ -806,7 +817,7 @@ function toggleSelectionMenu(itemId) {
 function displaySelectedItem(menuItems){
     let displayMenusItem = menuItems.map((menuItem) => {
         return `      
-             <div class="col-sm-12 col-lg-6 col-md-12">
+            <div class="col-sm-12 col-lg-6 col-md-12">
                 <div class="selected-item">
                     
                    <div class=" d-flex justify-content-between">
@@ -838,13 +849,33 @@ function toggleSelection(itemId) {
 
     // Змініть значення властивості selected
     menuItem.selected = !menuItem.selected;
-   const menuCategory = menu.filter((menuItem) => {
+    const selectedItems = menu.filter(item => item.selected);
+    saveSelectedItemsToSessionStorage(selectedItems);
+    displaySelectedItem(selectedItems);
+   /* const menuCategory = menu.filter((menuItem) => {
         if(menuItem.selected){
             return menuItem;
         }});
     // Оновіть відображення обраного елемента
-    displaySelectedItem(menuCategory);
+    displaySelectedItem(menuCategory);*/
 }
+window.onload = function () {
+    const selectedItems = getSelectedItemsFromSessionStorage();
+    menu.forEach(item => {
+      item.selected = selectedItems.some(selectedItem => selectedItem.id === item.id);
+    });
+  
+    // Display updated menu based on selected items
+    const menuCategory = menu.filter((menuItem) => {
+      if (menuItem.selected) {
+        return menuItem;
+      }
+    });
+    displayMenusItem(sections, menuCategory);
+  
+    // Display updated selected items
+    displaySelectedItem(selectedItems);
+  };
 
 /*function displaySubMenusItem(menuItem, subCategory){
     
