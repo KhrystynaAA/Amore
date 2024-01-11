@@ -242,13 +242,13 @@ html {
 
   /* #endregion */
   /* #region main */
-  .main {
-    padding: 120px;
+ .main {
+    padding: 12px;
     background-color: white;
   }
   @media(max-width:640px){
     .main {
-        padding: 50px;
+        padding: 5px;
     }
   }
   /* #endregion */
