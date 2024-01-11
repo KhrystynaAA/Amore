@@ -806,8 +806,8 @@ function toggleSelectionMenu(itemId) {
 function displaySelectedItem(menuItems){
     let displayMenusItem = menuItems.map((menuItem) => {
         return `      
-            <div class="col-sm-12 col-lg-4 col-md-12">
-                <div class="card">
+             <div class="col-sm-12 col-lg-6 col-md-12">
+                <div class="selected-item">
                     
                    <div class=" d-flex justify-content-between">
                     <div class="card-body flex-grow-1">
