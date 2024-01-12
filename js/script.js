@@ -74,6 +74,8 @@ liked__products.onclick=()=>{
         }});
     displaySelectedItem(menuCategory);
         
+    document.body.scrollTop = 0; 
+    document.documentElement.scrollTop = 0;
 }
 filterBtnsBaner.forEach((btn)=>{
     btn.addEventListener("click", (e)=>{
