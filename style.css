@@ -23,7 +23,7 @@ html {
     flex-direction: column-reverse;
     justify-content: space-between;
     box-sizing: border-box;
-    min-height: 50vh;
+    min-height: 35vh;
   }
   .header::before {
     content: '';
