@@ -25,12 +25,7 @@ html {
     box-sizing: border-box;
     min-height: 50vh;
   }
-  @media (max-width: 800px){
-    .header {
-      min-height: 35vh;
-    }
-   
- }
+ 
   .header::before {
     content: '';
     position: absolute;
@@ -43,11 +38,12 @@ html {
 }
 @media (max-width: 800px){
   .header::before {
-    height: 65%;
+    height: 73%;
   }
- 
+  .header {
+    min-height: 35vh;
+  }
 }
- 
  
   .logo {
     width: 100px;
@@ -258,6 +254,8 @@ html {
   .main {
     padding: 12px;
     background-color: white;
+    border-radius: 25px 25px 0 0 ; /* Заокруглення секції знизу */
+
   }
   @media(max-width:640px){
     .main {
@@ -409,7 +407,7 @@ border-radius: 50%;
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
   background-image: url('img/btnImage.jpeg');
     background-size: cover; 
-    border-radius: 5;
+    border-radius: 25px;
 }
 
 .btun::after{
