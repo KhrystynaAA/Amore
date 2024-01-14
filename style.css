@@ -5,7 +5,14 @@ html {
   
   body {
     margin: 0;
-    font-family: 'Inter', sans-serif;
+    /*font-family: 'Amita', serif;
+font-family: 'Charm', cursive;
+font-family: 'Dancing Script', cursive;
+font-family: 'Herr Von Muellerhoff', cursive;
+font-family: 'Inter', sans-serif;
+font-family: 'Julee', cursive;
+font-family: 'Seaweed Script', cursive;*/
+    font-family: 'Julee', cursive;
     color: #292929;
     font-size: 16px;
     line-height: 140%;
