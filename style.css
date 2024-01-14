@@ -23,24 +23,38 @@ html {
     flex-direction: column-reverse;
     justify-content: space-between;
     box-sizing: border-box;
-    min-height: 35vh;
+    min-height: 50vh;
   }
+  @media (max-width: 800px){
+    .header {
+      min-height: 35vh;
+    }
+   
+ }
   .header::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 65%;
+    height: 165%;
     background: url(img/cover.jpeg) no-repeat center center/cover;
     z-index: -1; /* Помістіть псевдоелемент за реальний контент */
 }
+@media (max-width: 800px){
+  .header::before {
+    height: 65%;
+  }
+ 
+}
+ 
  
   .logo {
     width: 100px;
   }
   
   
+   
   .header__top {
     display: flex;
     width: 100vw;
@@ -49,7 +63,7 @@ html {
   }
   @media (max-width: 800px){
     .header__top {
-      padding: 2px 2px;
+      padding: 4px 4px;
     }
    
  }
@@ -241,7 +255,7 @@ html {
 
   /* #endregion */
   /* #region main */
- .main {
+  .main {
     padding: 12px;
     background-color: white;
   }
@@ -441,7 +455,7 @@ border-radius: 50%;
   .btn-coffee.active {
     background: #D2691E; /* Світло-кавовий колір - коричневий */
   }
-.sub-menu-container {
+  .sub-menu-container {
     display: flex;
     overflow-x: auto;
     white-space: nowrap;
@@ -479,7 +493,6 @@ border-radius: 50%;
   border-radius: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
 .card-img-logo{
   width: 40%;
 }
