@@ -2294,7 +2294,7 @@ const daysOfWeek = ["sunday", "monday", "tuesday", "wednesday", "thursday", "fri
 const highlightedDay = document.getElementById(daysOfWeek[currentDay]);
 if (highlightedDay) {
     highlightedDay.style.textShadow = '2px 2px 4px rgba(128, 126, 126, 0.5)'; // Додаємо тінь
-    highlightedDay.style.fontSize = '1.1em'; 
+    highlightedDay.style.fontSize = '1.2em'; 
 }
 
 /*function displaySubMenusItem(menuItem, subCategory){
