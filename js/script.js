@@ -73,9 +73,10 @@ liked__products.onclick=()=>{
             return menuItem;
         }});
     displaySelectedItem(menuCategory);
-        
+    
     document.body.scrollTop = 0; 
     document.documentElement.scrollTop = 0;
+        
 }
 filterBtnsBaner.forEach((btn)=>{
     btn.addEventListener("click", (e)=>{
@@ -2283,6 +2284,18 @@ window.onload = function () {
     // Display updated selected items
     displaySelectedItem(selectedItems);
   };
+// Отримати поточний день тижня (від 0 до 6, де 0 - неділя, 1 - понеділок, і так далі)
+const currentDay = new Date().getDay();
+
+// Створити масив днів тижня
+const daysOfWeek = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"];
+
+// Знайти елемент дня тижня за ідентифікатором і підсвітити його
+const highlightedDay = document.getElementById(daysOfWeek[currentDay]);
+if (highlightedDay) {
+    highlightedDay.style.textShadow = '2px 2px 4px rgba(128, 126, 126, 0.5)'; // Додаємо тінь
+    highlightedDay.style.fontSize = '1.1em'; 
+}
 
 /*function displaySubMenusItem(menuItem, subCategory){
     
