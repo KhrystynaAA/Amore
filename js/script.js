@@ -2293,8 +2293,9 @@ const daysOfWeek = ["sunday", "monday", "tuesday", "wednesday", "thursday", "fri
 // Знайти елемент дня тижня за ідентифікатором і підсвітити його
 const highlightedDay = document.getElementById(daysOfWeek[currentDay]);
 if (highlightedDay) {
-    highlightedDay.style.textShadow = '2px 2px 4px rgba(128, 126, 126, 0.5)'; // Додаємо тінь
+    
     highlightedDay.style.fontSize = '1.2em'; 
+    highlightedDay.style.fontWeight = 'bold';
 }
 
 /*function displaySubMenusItem(menuItem, subCategory){
