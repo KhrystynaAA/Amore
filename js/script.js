@@ -285,7 +285,7 @@ const menu = [
         Category: "pizza",
         article: "Піца",
         description: "Чілі, салямі, оливки, помідор, сир",
-        price: "Діаметр 22см - 100UAH <br> Діаметр 32см - 150UAH <br> Діаметр 50см - 260UAH",
+        price: "Діаметр 22см - 100UAH <br> Діаметр 32см - 160UAH <br> Діаметр 50см - 260UAH",
         categoryIndex: 5,
         weight: "",
         img: "img/products/pizza/podyhDragon.jpg"
@@ -329,7 +329,7 @@ const menu = [
         Category: "pizza",
         article: "Піца",
         description: "Мисливські ковбаски, курка, в'ялені помідори, оливки зелені, сир",
-        price: "Діаметр 22см - 100UAH <br> Діаметр 32см - 170UAH <br> Діаметр 50см - 280UAH",
+        price: "Діаметр 22см - 100UAH <br> Діаметр 32см - 200UAH <br> Діаметр 50см - 280UAH",
         categoryIndex: 5,
         weight: "",
         img: "img/products/pizza/salsa.jpg"
@@ -1937,6 +1937,7 @@ const menu = [
         price: "150UAH",
         categoryIndex: 19,
         weight: "450г",
+        img: "img/products/frytur/potato-po-seliansky.jpg"
     },
     {
         id: 198,
@@ -1957,6 +1958,7 @@ const menu = [
         price: "600UAH",
         categoryIndex: 19,
         weight: "1400г",
+        img: "img/products/frytur/set-fri-1.jpg"
     },
     {
         id: 200,
@@ -2293,9 +2295,9 @@ const daysOfWeek = ["sunday", "monday", "tuesday", "wednesday", "thursday", "fri
 // Знайти елемент дня тижня за ідентифікатором і підсвітити його
 const highlightedDay = document.getElementById(daysOfWeek[currentDay]);
 if (highlightedDay) {
-    
     highlightedDay.style.fontSize = '1.2em'; 
     highlightedDay.style.fontWeight = 'bold';
+
 }
 
 /*function displaySubMenusItem(menuItem, subCategory){
