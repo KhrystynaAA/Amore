@@ -12,11 +12,11 @@ font-family: 'Herr Von Muellerhoff', cursive;
 font-family: 'Inter', sans-serif;
 font-family: 'Julee', cursive;
 font-family: 'Seaweed Script', cursive;*/
-    font-family: 'Montserrat Alternates', sans-serif;
+font-family: 'Montserrat Alternates', sans-serif;
     color: #292929;
     font-size: 16px;
     line-height: 140%;
-    
+    background-color: #FFEBCD;
   }
   a{
     text-decoration: none;
@@ -260,9 +260,9 @@ font-family: 'Seaweed Script', cursive;*/
   /* #region main */
   .main {
     padding: 12px;
-    background-color: white;
     border-radius: 25px 25px 0 0 ; /* Заокруглення секції знизу */
-
+    border-top: rgb(231, 211, 176) solid;
+    background-color: #FFEBCD;
   }
   @media(max-width:640px){
     .main {
@@ -291,9 +291,6 @@ font-family: 'Seaweed Script', cursive;*/
   .card-menu{
     background-color: #e6d9b5;
     width: 100%;
-}
-.back__menu{
-  background-color: #FFEBCD;
 }
   /* #endregion */
   /* #region product */
