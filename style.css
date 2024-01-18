@@ -261,7 +261,7 @@ font-family: 'Montserrat Alternates', sans-serif;
   /* #endregion */
   /* #region main */
   .main {
-    min-height: 600px;
+    min-height: 400px;
     border-radius: 25px 25px 0 0 ; /* Заокруглення секції знизу */
     border-top: rgb(231, 211, 176) solid;
     background-color: #FFEBCD;
