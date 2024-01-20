@@ -98,7 +98,7 @@ const menu = [
         price: "Діаметр 22см - 80UAH <br> Діаметр 32см - 150UAH <br> Діаметр 50см - 260UAH",
         categoryIndex: 5,
         weight: "",
-        img: "img/products/pizza/amore.jpg",
+        img: "img/products/pizza/amore.png",
         selected: false
     },
     {
@@ -110,7 +110,7 @@ const menu = [
         price: "Діаметр 22см - 80UAH <br> Діаметр 32см - 150UAH <br> Діаметр 50см - 260UAH",
         categoryIndex: 5,
         weight: "",
-        img: "img/products/pizza/montana.jpg",
+        img: "img/products/pizza/montana.png",
         selected: false
     },
     {
@@ -122,7 +122,7 @@ const menu = [
         price: "Діаметр 22см - 80UAH <br> Діаметр 32см - 150UAH <br> Діаметр 50см - 260UAH",
         categoryIndex: 5,
         weight: "",
-        img: "img/products/pizza/tachino.jpg",
+        img: "img/products/pizza/tachino.png",
         selected: false
     },
     {
@@ -134,7 +134,7 @@ const menu = [
         price: "Діаметр 22см - 80UAH <br> Діаметр 32см - 150UAH <br> Діаметр 50см - 260UAH",
         categoryIndex: 5,
         weight: "",
-        img: "img/products/pizza/capricha.jpg"
+        img: "img/products/pizza/capricha.png"
     },
     {
         id: 5,
@@ -145,7 +145,7 @@ const menu = [
         price: "Діаметр 22см - 100UAH <br> Діаметр 32см - 200UAH <br> Діаметр 50см - 290UAH",
         categoryIndex: 5,
         weight: "",
-        img: "img/products/pizza/paza.jpg"
+        img: "img/products/pizza/paza.png"
     },
     {
         id: 6,
@@ -156,7 +156,7 @@ const menu = [
         price: "Діаметр 22см - 100UAH <br> Діаметр 32см - 200UAH <br> Діаметр 50см - 290UAH",
         categoryIndex: 5,
         weight: "",
-        img: "img/products/pizza/fourCheese.jpg"
+        img: "img/products/pizza/fourCheese.png"
     },
     {
         id: 7,
@@ -167,7 +167,7 @@ const menu = [
         price: "Діаметр 22см - 80UAH <br> Діаметр 32см - 150UAH <br> Діаметр 50см - 260UAH",
         categoryIndex: 5,
         weight: "",
-        img: "img/products/pizza/polo.jpg"
+        img: "img/products/pizza/polo.png"
     },
     {
         id: 8,
@@ -178,7 +178,7 @@ const menu = [
         price: "Діаметр 22см - 80UAH <br> Діаметр 32см - 150UAH <br> Діаметр 50см - 260UAH",
         categoryIndex: 5,
         weight: "",
-        img: "img/products/pizza/mexykanska.jpg"
+        img: "img/products/pizza/mexykanska.png"
     },
     {
         id: 9,
@@ -189,7 +189,7 @@ const menu = [
         price: "Діаметр 22см - 80UAH <br> Діаметр 32см - 150UAH <br> Діаметр 50см - 260UAH",
         categoryIndex: 5,
         weight: "",
-        img: "img/products/pizza/domashnia.jpg"
+        img: "img/products/pizza/domashnia.png"
     },
     {
         id: 10,
@@ -200,7 +200,7 @@ const menu = [
         price: "Діаметр 22см - 80UAH <br> Діаметр 32см - 150UAH <br> Діаметр 50см - 260UAH",
         categoryIndex: 5,
         weight: "",
-        img: "img/products/pizza/carbonara.jpg"
+        img: "img/products/pizza/carbonara.png"
     },
     {
         id: 11,
@@ -211,7 +211,7 @@ const menu = [
         price: "Діаметр 22см - 80UAH <br> Діаметр 32см - 140UAH <br> Діаметр 50см - 260UAH",
         categoryIndex: 5,
         weight: "",
-        img: "img/products/pizza/saliami.jpg"
+        img: "img/products/pizza/saliami.png"
     },
     {
         id: 12,
@@ -222,7 +222,7 @@ const menu = [
         price: "Діаметр 22см - 100UAH <br> Діаметр 32см - 200UAH <br> Діаметр 50см - 280UAH",
         categoryIndex: 5,
         weight: "",
-        img: "img/products/pizza/majore.jpg"
+        img: "img/products/pizza/majore.png"
     },
     {
         id: 13,
@@ -233,7 +233,7 @@ const menu = [
         price: "Діаметр 32см - 180UAH <br> Діаметр 50см - 270UAH",
         categoryIndex: 5,
         weight: "",
-        img: "img/products/pizza/tune.jpg"
+        img: "img/products/pizza/tune.png"
     },
     {
         id: 14,
@@ -244,7 +244,7 @@ const menu = [
         price: "Діаметр 32см - 150UAH ",
         categoryIndex: 5,
         weight: "",
-        img: "img/products/pizza/liguriia.jpg"
+        img: "img/products/pizza/liguriia.png"
     },
     {
         id: 15,
@@ -266,7 +266,7 @@ const menu = [
         price: "Діаметр 22см - 100UAH <br> Діаметр 32см - 180UAH <br> Діаметр 50см - 280UAH",
         categoryIndex: 5,
         weight: "",
-        img: "img/products/pizza/seaCocktail.jpg"
+        img: "img/products/pizza/seaCocktail.png"
     },
     {
         id: 17,
@@ -277,7 +277,7 @@ const menu = [
         price: "Діаметр 22см - 100UAH <br> Діаметр 32см - 200UAH <br> Діаметр 50см - 300UAH",
         categoryIndex: 5,
         weight: "",
-        img: "img/products/pizza/proshuto.jpg"
+        img: "img/products/pizza/proshuto.png"
     },
     {
         id: 18,
@@ -288,7 +288,7 @@ const menu = [
         price: "Діаметр 22см - 100UAH <br> Діаметр 32см - 160UAH <br> Діаметр 50см - 260UAH",
         categoryIndex: 5,
         weight: "",
-        img: "img/products/pizza/podyhDragon.jpg"
+        img: "img/products/pizza/podyhDragon.png"
     },
     {
         id: 19,
@@ -299,7 +299,7 @@ const menu = [
         price: "Діаметр 22см - 80UAH <br> Діаметр 32см - 150UAH <br> Діаметр 50см - 260UAH",
         categoryIndex: 5,
         weight: "",
-        img: "img/products/pizza/primavera.jpg"
+        img: "img/products/pizza/primavera.png"
     },
     {
         id: 20,
@@ -310,7 +310,7 @@ const menu = [
         price: "Діаметр 22см - 80UAH <br> Діаметр 32см - 150UAH <br> Діаметр 50см - 260UAH",
         categoryIndex: 5,
         weight: "",
-        img: "img/products/pizza/mashroom.jpg"
+        img: "img/products/pizza/mashroom.png"
     },
     {
         id: 21,
@@ -332,7 +332,7 @@ const menu = [
         price: "Діаметр 22см - 100UAH <br> Діаметр 32см - 200UAH <br> Діаметр 50см - 280UAH",
         categoryIndex: 5,
         weight: "",
-        img: "img/products/pizza/salsa.jpg"
+        img: "img/products/pizza/salsa.png"
     },
     {
         id: 23,
@@ -343,7 +343,7 @@ const menu = [
         price: "Діаметр 22см - 80UAH <br> Діаметр 32см - 150UAH <br> Діаметр 50см - 260UAH",
         categoryIndex: 5,
         weight: "",
-        img: "img/products/pizza/polermo.jpg"
+        img: "img/products/pizza/polermo.png"
     },
     {
         id: 24,
@@ -354,7 +354,7 @@ const menu = [
         price: "Діаметр 22см - 100UAH <br> Діаметр 32см - 180UAH <br> Діаметр 50см - 280UAH",
         categoryIndex: 5,
         weight: "",
-        img: "img/products/pizza/meat.jpg"
+        img: "img/products/pizza/meat.png"
     },
     {
         id: 25,
@@ -365,7 +365,7 @@ const menu = [
         price: "Діаметр 50см - 270UAH",
         categoryIndex: 5,
         weight: "",
-        img: "img/products/pizza/asorti.jpg"
+        img: "img/products/pizza/asorti.png"
     },
     {
         id: 26,
@@ -376,7 +376,7 @@ const menu = [
         price: "Діаметр 22см - 80UAH <br> Діаметр 32см - 130UAH",
         categoryIndex: 5,
         weight: "",
-        img: "img/products/pizza/margaryta.jpg"
+        img: "img/products/pizza/margaryta.png"
     },
     {
         id: 27,
@@ -387,7 +387,7 @@ const menu = [
         price: "Діаметр 22см - 100UAH <br> Діаметр 32см - 180UAH <br> Діаметр 50см - 280UAH",
         categoryIndex: 5,
         weight: "",
-        img: "img/products/pizza/bianka.jpg"
+        img: "img/products/pizza/bianka.png"
     },
     {
         id: 28,
@@ -398,7 +398,7 @@ const menu = [
         price: "Діаметр 22см - 100UAH <br> Діаметр 32см - 160UAH <br> Діаметр 50см - 260UAH",
         categoryIndex: 5,
         weight: "",
-        img: "img/products/pizza/myslyvska.jpg"
+        img: "img/products/pizza/myslyvska.png"
     },
     {
         id: 29,
@@ -620,7 +620,7 @@ const menu = [
         price: "160UAH",
         categoryIndex: 1,
         weight: "260г",
-        img: ""
+        img: "img/products/sushi/filadelfia.png"
     },
     {
         id: 51,
@@ -631,7 +631,7 @@ const menu = [
         price: "180UAH",
         categoryIndex: 1,
         weight: "250г",
-        img: "img/products/sushi/filadelfia_shrimp.jpg"
+        img: "img/products/sushi/filadelfia_shrimp.png"
     },
     {
         id: 52,
@@ -675,7 +675,7 @@ const menu = [
         price: "140UAH",
         categoryIndex: 1,
         weight: "220г",
-        img: "img/products/sushi/filadelfia_masaho.jpg"
+        img: "img/products/sushi/filadelfia_masaho.png"
     },
     {
         id: 56,
@@ -686,7 +686,7 @@ const menu = [
         price: "170UAH",
         categoryIndex: 1,
         weight: "240г",
-        img: "img/products/sushi/californiia.jpg"
+        img: "img/products/sushi/californiia.png"
     },
     {
         id: 57,
@@ -719,7 +719,7 @@ const menu = [
         price: "200UAH",
         categoryIndex: 1,
         weight: "250г",
-        img: "img/products/sushi/green_dragon.jpg"
+        img: "img/products/sushi/green_dragon.png"
     },
     {
         id: 61,
@@ -730,7 +730,7 @@ const menu = [
         price: "170UAH",
         categoryIndex: 1,
         weight: "260г",
-        img: "img/products/sushi/green_dragon_shrimp.jpg"
+        img: "img/products/sushi/green_dragon_shrimp.png"
     },
     {
         id: 62,
@@ -741,7 +741,7 @@ const menu = [
         price: "160UAH",
         categoryIndex: 1,
         weight: "260г",
-        img: "img/products/sushi/white_dragon.jpg"
+        img: "img/products/sushi/white_dragon.png"
     },
     {
         id: 63,
@@ -934,7 +934,7 @@ const menu = [
         price: "160UAH",
         categoryIndex: 2,
         weight: "350г",
-        img: "img/products/sushi/warm_role_salmon.jpg"
+        img: "img/products/sushi/warm_role_salmon.png"
     },
     {
         id: 82,
@@ -2169,7 +2169,7 @@ function displayMenusItem(sectionItem, menuItems) {
                 <div class="col-sm-12 col-lg-4 col-md-6">
                     <div class="card-menu">
                         <img src=${menuItem.img ? menuItem.img : "img/icons/logoTab.png"} class="${menuItem.img ? '' : 'card-img-logo'} mx-auto d-block card-img-top">
-                        <div class="card-body">
+                        <div class="card-body flex-grow-1">
                             <p class="card-text">
                                 <p class="display-6">${menuItem.title}</p>
                                 <p class="small text-muted "><em>${menuItem.weight}</em></p>
