@@ -1252,7 +1252,7 @@ const menu = [
         price: "60UAH",
         categoryIndex: 8,
         weight: "350 мл",
-        img: "img/products/drinks/oreo_ice.jpg"
+        img: "img/products/drinks/oreo_ice.png"
     },
     {
         id: 131,
@@ -1364,7 +1364,7 @@ const menu = [
         price: "110UAH",
         categoryIndex: 12,
         weight: "250 мл",
-        img: "img/products/drinks/enjoy.jpg"
+        img: "img/products/drinks/enjoy.png"
     },
     {
         id: 143,
@@ -1375,7 +1375,7 @@ const menu = [
         price: "110UAH",
         categoryIndex: 12,
         weight: "300 мл",
-        img: "img/products/drinks/violet_aperol.jpg"
+        img: "img/products/drinks/violet_aperol.png"
     },
     {
         id: 144,
