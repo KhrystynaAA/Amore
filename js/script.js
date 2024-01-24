@@ -1289,7 +1289,7 @@ const menu = [
     },
     {
         id: 134,
-        title:"Какар з вершками та маршмелоу",
+        title:"Какао з вершками та маршмелоу",
         Category: "drinks",
         article: "Гарячі напої",
         description: '',
