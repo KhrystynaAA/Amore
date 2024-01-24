@@ -708,7 +708,7 @@ const menu = [
         price: "130UAH",
         categoryIndex: 1,
         weight: "180г",
-        img: "img/products/sushi/pink_flamingo.jpg"
+        img: "img/products/sushi/pink_flamingo.png"
     },
     {
         id: 60,
