@@ -806,6 +806,7 @@ const menu = [
         price: "150UAH",
         categoryIndex: 1,
         weight: "240г",
+        img: "img/products/sushi/bonito.png"
     },
     {
         id: 69,
@@ -1833,6 +1834,7 @@ const menu = [
         price: "190UAH",
         categoryIndex: 18,
         weight: "",
+        img: "img/products/burgers/burger_chicken.png"
     },
     {
         id: 187,
@@ -1843,6 +1845,7 @@ const menu = [
         price: "160UAH",
         categoryIndex: 18,
         weight: "",
+        img: "img/products/burgers/burger_kid.png"
     },
     {
         id: 188,
