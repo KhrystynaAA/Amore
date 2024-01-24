@@ -2288,20 +2288,7 @@ window.onload = function () {
       item.selected = selectedItems.some(selectedItem => selectedItem.id === item.id);
     });
   
-    // Display updated menu based on selected items
-    const menuCategory = menu.filter((menuItem) => {
-      if (menuItem.selected) {
-        return menuItem;
-      }
-    });
-    let y=document.getElementById('recommended');
-        
-    if(y.classList.contains("active")){
-        displayMenusItem(sections, menuCategory);
-  
-    // Display updated selected items
-    displaySelectedItem(selectedItems);
-    }
+    
     
   };
 // Отримати поточний день тижня (від 0 до 6, де 0 - неділя, 1 - понеділок, і так далі)
