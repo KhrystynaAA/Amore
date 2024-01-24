@@ -867,6 +867,7 @@ const menu = [
         price: "100UAH",
         categoryIndex: 1,
         weight: "210г",
+        img: "img/products/sushi/surimi_sesame.png"
     },
     {
         id: 75,
@@ -898,6 +899,7 @@ const menu = [
         price: "60UAH",
         categoryIndex: 1,
         weight: "180г",
+        img: "img/products/sushi/maky_cucumber.png"
     },
     {
         id: 78,
@@ -1046,6 +1048,7 @@ const menu = [
         price: "270UAH",
         categoryIndex: 3,
         weight: "640г (24 шматки)",
+        img: "img/products/sushi/set_asorti_lite.jpg"
     },
     {
         id: 92,
@@ -2287,8 +2290,9 @@ window.onload = function () {
     menu.forEach(item => {
       item.selected = selectedItems.some(selectedItem => selectedItem.id === item.id);
     });
-  
     
+    document.body.scrollTop = 0; 
+    document.documentElement.scrollTop = 0;
     
   };
 // Отримати поточний день тижня (від 0 до 6, де 0 - неділя, 1 - понеділок, і так далі)
