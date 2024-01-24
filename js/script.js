@@ -4,7 +4,7 @@ btn__home.onclick=()=>{
     x.classList.remove("hide__menu");
     let y=document.getElementById('recommended');
         y.classList.remove("active");
-        let z=document.getElementById('backBtn');
+    let z=document.getElementById('backBtn');
     z.classList.remove("active");
 }
 backBtn.onclick=()=>{
@@ -664,7 +664,7 @@ const menu = [
         price: "180UAH",
         categoryIndex: 1,
         weight: "240г",
-        img: "img/products/sushi/filadelfia_eel.jpg"
+        img: "img/products/sushi/filadelfia_eel.png"
     },
     {
         id: 55,
@@ -752,6 +752,7 @@ const menu = [
         price: "200UAH",
         categoryIndex: 1,
         weight: "250г",
+        img: "img/products/sushi/red_dragon.png"
     },
     {
         id: 64,
@@ -772,6 +773,7 @@ const menu = [
         price: "110UAH",
         categoryIndex: 1,
         weight: "260г",
+        img: "img/products/sushi/cheese.png"
     },
     {
         id: 66,
@@ -782,7 +784,7 @@ const menu = [
         price: "160UAH",
         categoryIndex: 1,
         weight: "260г",
-        img: "img/products/sushi/cheese_eel.jpg"
+        img: "img/products/sushi/cheese_eel.png"
     },
     {
         id: 67,
@@ -793,7 +795,7 @@ const menu = [
         price: "150UAH",
         categoryIndex: 1,
         weight: "260г",
-        img: "img/products/sushi/cheese_shrimp.jpg"
+        img: "img/products/sushi/cheese_shrimp.png"
     },
     {
         id: 68,
@@ -844,6 +846,7 @@ const menu = [
         price: "140UAH",
         categoryIndex: 1,
         weight: "200г",
+        img: "img/products/sushi/mon_rol.png"
     },
     {
         id: 73,
@@ -874,6 +877,7 @@ const menu = [
         price: "130UAH",
         categoryIndex: 1,
         weight: "230г",
+        img: "img/products/sushi/chicken_rol.png"
     },
     {
         id: 76,
@@ -924,6 +928,7 @@ const menu = [
         price: "65UAH",
         categoryIndex: 1,
         weight: "200г",
+        img: "img/products/sushi/maky_surimi.png"
     },
     {
         id: 81,
@@ -967,7 +972,7 @@ const menu = [
         price: "120UAH",
         categoryIndex: 2,
         weight: "300г",
-        img: "img/products/sushi/warm_role_mussel.jpg"
+        img: "img/products/sushi/warm_midia.png"
     },
     {
         id: 85,
@@ -1101,6 +1106,8 @@ const menu = [
         price: "120UAH",
         categoryIndex: 1,
         weight: "260г",
+        img: "img/products/sushi/cheese_midia.png"
+
     },
     {
         id: 99,
@@ -1111,6 +1118,7 @@ const menu = [
         price: "150UAH",
         categoryIndex: 1,
         weight: "250г",
+        img: "img/products/sushi/filadelfia_salmon.png"
     },
     {
         id: 100,
@@ -1121,6 +1129,7 @@ const menu = [
         price: "200UAH",
         categoryIndex: 1,
         weight: "250г",
+        img: "img/products/sushi/origami.png"
     },
     {
         id: 101,
@@ -1344,6 +1353,7 @@ const menu = [
         price: "85UAH",
         categoryIndex: 12,
         weight: "300 мл",
+        img: "img/products/drinks/mohito.png"
     },
     {
         id: 141,
@@ -1396,6 +1406,7 @@ const menu = [
         price: "50UAH",
         categoryIndex: 9,
         weight: "300 мл",
+        img: "img/products/drinks/mohito.png"
     },
     {
         id: 146,
@@ -1416,6 +1427,7 @@ const menu = [
         price: "60UAH",
         categoryIndex: 9,
         weight: "300 мл",
+        img: "img/products/drinks/barbie.png"
     },
     {
         id: 148,
@@ -1636,6 +1648,7 @@ const menu = [
         price: "150UAH",
         categoryIndex: 14,
         weight: "300г",
+        img: "img/products/bowls/bowl_shrimp.png"
     },
     {
         id: 170,
@@ -1776,6 +1789,7 @@ const menu = [
         price: "180UAH",
         categoryIndex: 15,
         weight: "390г",
+        img: "img/products/salads/cezar.png"
     },
     {
         id: 183,
@@ -1988,6 +2002,16 @@ const menu = [
         price: "10UAH",
         categoryIndex: 21,
         weight: "",
+    },
+    {
+        id: 204,
+        title:"Боул з вугрем",
+        Category: "sushi-bowl",
+        article: "Суші боул",
+        description: "Рис, вугор, сир Філадельфія, авокадо, перець, огірок, салат, імбир, соус Унагі",
+        price: "180UAH",
+        categoryIndex: 14,
+        weight: "300г",
     },
 ]
 const sections =[
@@ -2270,10 +2294,15 @@ window.onload = function () {
         return menuItem;
       }
     });
-    displayMenusItem(sections, menuCategory);
+    let y=document.getElementById('recommended');
+        
+    if(y.classList.contains("active")){
+        displayMenusItem(sections, menuCategory);
   
     // Display updated selected items
     displaySelectedItem(selectedItems);
+    }
+    
   };
 // Отримати поточний день тижня (від 0 до 6, де 0 - неділя, 1 - понеділок, і так далі)
 const currentDay = new Date().getDay();
