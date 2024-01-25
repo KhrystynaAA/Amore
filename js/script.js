@@ -1297,6 +1297,7 @@ const menu = [
         price: "40UAH",
         categoryIndex: 8,
         weight: "200 мл",
+	img: "img/products/drinks/cacao.png"
     },
     {
         id: 135,
