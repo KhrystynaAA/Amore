@@ -1824,6 +1824,7 @@ const menu = [
         price: "200UAH",
         categoryIndex: 18,
         weight: "",
+	img: "img/products/burgers/burger_rancho.png"
     },
     {
         id: 186,
