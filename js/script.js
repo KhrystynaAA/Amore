@@ -1297,7 +1297,7 @@ const menu = [
         price: "40UAH",
         categoryIndex: 8,
         weight: "200 мл",
-	img: "img/products/drinks/cacao.png"
+        img: "img/products/drinks/cacao.png"
     },
     {
         id: 135,
@@ -1805,6 +1805,7 @@ const menu = [
         price: "240UAH",
         categoryIndex: 15,
         weight: "350г",
+        img: "img/products/salads/hamon.png"
     },
     {
         id: 184,
@@ -1825,7 +1826,7 @@ const menu = [
         price: "200UAH",
         categoryIndex: 18,
         weight: "",
-	img: "img/products/burgers/burger_rancho.png"
+        img: "img/products/burgers/burger_rancho.png"
     },
     {
         id: 186,
@@ -1878,6 +1879,7 @@ const menu = [
         price: "190UAH",
         categoryIndex: 18,
         weight: "",
+        img: "img/products/burgers/warm_camamber.png"
     },
     {
         id: 191,
@@ -1908,6 +1910,7 @@ const menu = [
         price: "60UAH",
         categoryIndex: 19,
         weight: "200г",
+        img: "img/products/frytur/fri.png"
     },
     {
         id: 194,
@@ -1918,6 +1921,7 @@ const menu = [
         price: "70UAH",
         categoryIndex: 19,
         weight: "8шт",
+        img: "img/products/frytur/nagetsy.png"
     },
     {
         id: 195,
@@ -1928,6 +1932,7 @@ const menu = [
         price: "70UAH",
         categoryIndex: 19,
         weight: "6шт",
+        img: "img/products/frytur/cheese_sticks.png"
     },
     {
         id: 196,
@@ -1938,6 +1943,7 @@ const menu = [
         price: "70UAH",
         categoryIndex: 19,
         weight: "10шт",
+        img: "img/products/frytur/onion_rings.png"
     },
     {
         id: 197,
@@ -1959,6 +1965,7 @@ const menu = [
         price: "150UAH",
         categoryIndex: 19,
         weight: "400г",
+        img: "img/products/frytur/homilky_crispy.png"
     },
     {
         id: 199,
