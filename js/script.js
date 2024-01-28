@@ -1869,6 +1869,7 @@ const menu = [
         price: "240UAH",
         categoryIndex: 18,
         weight: "",
+        img: "img/products/burgers/burger_camamber.png"
     },
     {
         id: 190,
