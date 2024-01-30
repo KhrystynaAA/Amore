@@ -99,7 +99,6 @@ const menu = [
         categoryIndex: 5,
         weight: "",
         img: "img/products/pizza/amore.png",
-        selected: false
     },
     {
         id: 2,
@@ -111,7 +110,6 @@ const menu = [
         categoryIndex: 5,
         weight: "",
         img: "img/products/pizza/montana.png",
-        selected: false
     },
     {
         id: 3,
@@ -123,7 +121,6 @@ const menu = [
         categoryIndex: 5,
         weight: "",
         img: "img/products/pizza/tachino.png",
-        selected: false
     },
     {
         id: 4,
@@ -321,7 +318,6 @@ const menu = [
         price: "Діаметр 22см - 80UAH <br> Діаметр 32см - 150UAH <br> Діаметр 50см - 260UAH",
         categoryIndex: 5,
         weight: "",
-        img: "img/products/pizza/chicken.jpg"
     },
     {
         id: 22,
@@ -343,7 +339,6 @@ const menu = [
         price: "Діаметр 22см - 80UAH <br> Діаметр 32см - 150UAH <br> Діаметр 50см - 260UAH",
         categoryIndex: 5,
         weight: "",
-        img: "img/products/pizza/polermo.png"
     },
     {
         id: 24,
@@ -354,7 +349,6 @@ const menu = [
         price: "Діаметр 22см - 100UAH <br> Діаметр 32см - 180UAH <br> Діаметр 50см - 280UAH",
         categoryIndex: 5,
         weight: "",
-        img: "img/products/pizza/meat.png"
     },
     {
         id: 25,
@@ -376,7 +370,6 @@ const menu = [
         price: "Діаметр 22см - 80UAH <br> Діаметр 32см - 130UAH",
         categoryIndex: 5,
         weight: "",
-        img: "img/products/pizza/margaryta.png"
     },
     {
         id: 27,
@@ -409,7 +402,6 @@ const menu = [
         price: "Діаметр 32см - 15UAH <br>Діаметр 50см - 20UAH",
         categoryIndex: 5,
         weight: "",
-        img: "img/products/pizza/case.jpg"
     },
     {
         id: 30,
