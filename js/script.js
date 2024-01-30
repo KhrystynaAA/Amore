@@ -678,7 +678,6 @@ const menu = [
         price: "170UAH",
         categoryIndex: 1,
         weight: "240г",
-        img: "img/products/sushi/californiia.png"
     },
     {
         id: 57,
@@ -945,7 +944,6 @@ const menu = [
         price: "150UAH",
         categoryIndex: 2,
         weight: "300г",
-        img: "img/products/sushi/warm_role_chicken.jpg"
     },
     {
         id: 83,
@@ -956,7 +954,6 @@ const menu = [
         price: "180UAH",
         categoryIndex: 2,
         weight: "350г",
-        img: "img/products/sushi/warm_role_shrimp.jpg"
     },
     {
         id: 84,
