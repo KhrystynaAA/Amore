@@ -46,9 +46,11 @@ font-family: 'Montserrat Alternates', sans-serif;
     z-index: -1; /* Помістіть псевдоелемент за реальний контент */
 }
 @media (max-width: 800px){
-
+.header::before {
+    height: 65%;
+  }
   .header {
-    min-height: 40vh;
+    min-height: 35vh;
   }
 }
  
