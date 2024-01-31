@@ -31,7 +31,7 @@ font-family: 'Montserrat Alternates', sans-serif;
     flex-direction: column-reverse;
     justify-content: space-between;
     box-sizing: border-box;
-    min-height: 50vh;
+    min-height: 60vh;
   }
  
   .header::before {
@@ -40,7 +40,7 @@ font-family: 'Montserrat Alternates', sans-serif;
     top: 0;
     left: 0;
     width: 100%;
-    height: 55%;
+    height: 65%;
     background: url(img/cover.jpeg) no-repeat center center/cover;
     overflow: hidden;
     z-index: -1; /* Помістіть псевдоелемент за реальний контент */
