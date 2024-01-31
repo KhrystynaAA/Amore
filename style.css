@@ -47,7 +47,7 @@ font-family: 'Montserrat Alternates', sans-serif;
 }
 @media (max-width: 800px){
   .header::before {
-    height: 55%;
+    height: 65%;
   }
   .header {
     min-height: 35vh;
