@@ -1786,7 +1786,7 @@ const menu = [
         img: "img/products/salads/cezar.png"
     },
     {
-        id: 183,
+        id: 58,
         title:"Салат з хамоном",
         Category: "salads",
         article: "Салати",
