@@ -7,24 +7,10 @@
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
   <body>
-   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <!-- Це важливо, щоб адмінка знала, що ви авторизовані -->
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
-<script>
-  // Цей код активує вікно пароля, якщо в посиланні є invite_token
-  window.netlifyIdentity.on('init', user => {
-    if (!user) {
-      window.netlifyIdentity.on('login', () => {
-        document.location.href = '/admin/';
-      });
-    }
-  });
-
-  // Додаткова перевірка для посилань активації
-  if (window.location.hash.includes('invite_token')) {
-    window.netlifyIdentity.on('init', () => {
-      window.netlifyIdentity.open('recovery'); // Відкриває вікно встановлення пароля
-    });
-  }
-</script>
+<!-- Це підключення самої панелі керування -->
+<script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
   </body>
 </html>
