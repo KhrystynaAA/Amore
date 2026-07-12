@@ -216,6 +216,26 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
-   
+		<!-- 1. Спочатку підключаємо сам віджет -->
+	<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+	
+	<!-- 2. Потім наш власний код, який ним керує -->
+	<script>
+	  window.netlifyIdentity.on('init', user => {
+	    if (!user) {
+	      window.netlifyIdentity.on('login', () => {
+	        document.location.href = '/admin/';
+	      });
+	    }
+	  });
+	
+	  // Ловимо токен із посилання
+	  if (window.location.hash.includes('invite_token')) {
+	    window.netlifyIdentity.on('init', () => {
+	      window.netlifyIdentity.open('recovery');
+	    });
+	  }
+	</script>
+	   
 </body>
 </html>
