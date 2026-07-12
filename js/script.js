@@ -396,7 +396,7 @@ function displaySelectedItem(menuItems){
                     <div class="d-flex justify-content-center align-items-center p-2" style="max-width: 27%;"><img src=${menuItem.img ? menuItem.img : "img/icons/logoTab.png"} class="card-img-top"></div>
                     </div>
                     <div class="d-flex justify-content-end align-items-center" id="select__btn">
-                    <button class="btn" onclick="toggleSelection(${menuItem.id})">
+                    <button class="btn" onclick="toggleSelection('${menuItem.id}')">
                     <i class="fas fa-heart fa-2x p-2"></i>
                 </button>
             </div>
