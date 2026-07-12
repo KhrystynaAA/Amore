@@ -87,7 +87,6 @@ filterBtnsBaner.forEach((btn)=>{
 })
 // Оголошуємо глобальну змінну для меню
 let menu = [];
-let menu = [];
 let sections = [];
 
 // 2. Логіка завантаження при відкритті сторінки
