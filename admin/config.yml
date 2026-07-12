@@ -16,6 +16,7 @@ collections:
           - label: "Список категорій"
             name: "items"
             widget: "list"
+            summary: "{{fields.title}}"
             fields:
               - {label: "ID (генерується автоматично)", name: "id", widget: "uuid"}
               - {label: "Назва (напр. Піца)", name: "title", widget: "string"}
@@ -32,6 +33,7 @@ collections:
           - label: "Список страв"
             name: "items"
             widget: "list"
+            summary: "{{fields.mainCategory}} : {{fields.title}}"
             fields:
               - {label: "ID (генерується автоматично)", name: "id", widget: "uuid"}
               - {label: "Назва", name: "title", widget: "string"}
