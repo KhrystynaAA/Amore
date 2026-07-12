@@ -33,7 +33,7 @@ collections:
           - label: "Список страв"
             name: "items"
             widget: "list"
-            summary: "{{fields.mainCategory}} : {{fields.title}}"
+            summary: "{{fields.article}} : {{fields.title}}"
             fields:
               - {label: "ID (генерується автоматично)", name: "id", widget: "uuid"}
               - {label: "Назва", name: "title", widget: "string"}
