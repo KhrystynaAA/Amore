@@ -36,6 +36,7 @@ collections:
             name: "items"
             widget: "list"
             show_add_top: true
+            sortable: true
             summary: "{{fields.article}} : {{fields.title}}"
             fields:
               - {label: "ID (генерується автоматично)", name: "id", widget: "uuid"}
