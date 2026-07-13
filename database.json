@@ -422,14 +422,15 @@
       "weight": "50 грам"
     },
     {
-      "id": "34",
-      "title": "Куряче м'ясо",
-      "Category": "pizza",
-      "article": "Склади свою піцу",
-      "description": "",
+      "img": "img/products/kurka-filevnutr.jpg",
       "price": "40UAH",
       "categoryIndex": "6",
-      "weight": "50 грам"
+      "article": "Склади свою піцу",
+      "title": "Куряче м'ясо",
+      "weight": "50 грам",
+      "id": "34",
+      "description": "",
+      "Category": "pizza"
     },
     {
       "id": "35",
