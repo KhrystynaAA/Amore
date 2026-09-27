@@ -59,20 +59,20 @@ window.addEventListener("DOMContentLoaded", () => {
         if (!Array.isArray(sections)) sections = [];
         if (!Array.isArray(menu)) menu = [];
 
-        // 1. ДИНАМІЧНО СТВОРЮЄМО КНОПКИ БУРГЕР-МЕНЮ (ШАПКА)
+        // 1. ДИНАМІЧНО СТВОРЮЄМО КНОПКИ БУРГЕР-МЕНЮ (ШАПКА) - ДОДАНО data-alias
         const navContainer = document.querySelector('#responsive .navbar-nav');
         if (navContainer) {
             navContainer.innerHTML = mainCategories.map(cat => 
-                `<button type="button" href="#${cat.alias}" class="nav__link main__link" data-id="${cat.id}">${cat.title}</button>`
+                `<button type="button" href="#${cat.alias}" class="nav__link main__link" data-id="${cat.id}" data-alias="${cat.alias}">${cat.title}</button>`
             ).join("");
         }
 
-        // 2. ДИНАМІЧНО СТВОРЮЄМО ВЕЛИКІ ПЛИТКИ ГОЛОВНОГО МЕНЮ
+        // 2. ДИНАМІЧНО СТВОРЮЄМО ВЕЛИКІ ПЛИТКИ ГОЛОВНОГО МЕНЮ - ДОДАНО data-alias
         const homeMenuContainer = document.getElementById('home__menu');
         if (homeMenuContainer) {
             homeMenuContainer.innerHTML = mainCategories.map(cat => 
                 `<div class="col-sm-12 col-lg-4 col-md-6 my-4">
-                    <button type="button" href="#${cat.alias}" class="btn btn-info btn-lg border-0 btun main__link" data-id="${cat.id}">${cat.title}</button>
+                    <button type="button" href="#${cat.alias}" class="btn btn-info btn-lg border-0 btun main__link" data-id="${cat.id}" data-alias="${cat.alias}">${cat.title}</button>
                 </div>`
             ).join("");
         }
@@ -95,13 +95,17 @@ window.addEventListener("DOMContentLoaded", () => {
                 let z=document.getElementById('backBtn');
                 z.className +=" active";
                
-                const Category = String(e.currentTarget.dataset.id);
+                // ВИПРАВЛЕНИЙ ФІЛЬТР: БЕРЕМО І НОВИЙ ID, І СТАРУ НАЗВУ (ALIAS)
+                const targetId = String(e.currentTarget.dataset.id);
+                const targetAlias = String(e.currentTarget.dataset.alias);
                 
                 const sectionCategory = sections.filter((sectionItem) => {
-    return Category === String(sectionItem.mainCategoryIndex) || 
-           Category === String(sectionItem.mainCategory) ||
-           Category.includes(String(sectionItem.mainCategory));
-});
+                    return String(sectionItem.mainCategoryIndex) === targetId || 
+                           String(sectionItem.mainCategory) === targetAlias ||
+                           String(sectionItem.mainCategory) === targetId ||
+                           targetAlias.includes(String(sectionItem.mainCategory));
+                });
+                
                 const sectionCategoryIndexes = sectionCategory.map(category => String(category.id));
 
                 const menuCategory = menu.filter(menuItem => sectionCategoryIndexes.includes(String(menuItem.categoryIndex)));
