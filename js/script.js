@@ -97,7 +97,11 @@ window.addEventListener("DOMContentLoaded", () => {
                
                 const Category = String(e.currentTarget.dataset.id);
                 
-                const sectionCategory = sections.filter((sectionItem) => Category.includes(String(sectionItem.mainCategory)));
+                const sectionCategory = sections.filter((sectionItem) => {
+    return Category === String(sectionItem.mainCategoryIndex) || 
+           Category === String(sectionItem.mainCategory) ||
+           Category.includes(String(sectionItem.mainCategory));
+});
                 const sectionCategoryIndexes = sectionCategory.map(category => String(category.id));
 
                 const menuCategory = menu.filter(menuItem => sectionCategoryIndexes.includes(String(menuItem.categoryIndex)));
